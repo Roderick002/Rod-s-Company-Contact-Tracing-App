@@ -115,7 +115,7 @@
             this.LblCtfNameFormat.Name = "LblCtfNameFormat";
             this.LblCtfNameFormat.Size = new System.Drawing.Size(171, 17);
             this.LblCtfNameFormat.TabIndex = 3;
-            this.LblCtfNameFormat.Text = "(Last Name, First Name)";
+            this.LblCtfNameFormat.Text = "(First Name, Last Name)";
             // 
             // TbCtfName
             // 
@@ -346,7 +346,7 @@
             this.LblCtfQ2.Name = "LblCtfQ2";
             this.LblCtfQ2.Size = new System.Drawing.Size(279, 40);
             this.LblCtfQ2.TabIndex = 26;
-            this.LblCtfQ2.Text = "2. Did you come into contact with\r\n anyone that feels unwell?\r\n";
+            this.LblCtfQ2.Text = "2. Did you come into contact with\r\n anyone that feels unwell?";
             // 
             // LblCtfQ3
             // 
@@ -365,7 +365,7 @@
             this.LblCtfTitle.Font = new System.Drawing.Font("Cooper Black", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LblCtfTitle.Location = new System.Drawing.Point(8, 23);
             this.LblCtfTitle.Name = "LblCtfTitle";
-            this.LblCtfTitle.Size = new System.Drawing.Size(409, 50);
+            this.LblCtfTitle.Size = new System.Drawing.Size(400, 49);
             this.LblCtfTitle.TabIndex = 28;
             this.LblCtfTitle.Text = "ROD\'s COMPANY";
             // 
@@ -504,6 +504,7 @@
             this.BtnCtfSubmit.TabIndex = 40;
             this.BtnCtfSubmit.Text = "Submit";
             this.BtnCtfSubmit.UseVisualStyleBackColor = true;
+            this.BtnCtfSubmit.Click += new System.EventHandler(this.BtnCtfSubmit_Click);
             // 
             // ContactTracing
             // 
