@@ -67,7 +67,7 @@
             this.RbCtfAnswer2No = new System.Windows.Forms.RadioButton();
             this.GbCtfAnswers3 = new System.Windows.Forms.GroupBox();
             this.RbCtfAnswer3Yes = new System.Windows.Forms.RadioButton();
-            this.GbCtfAnswer3No = new System.Windows.Forms.RadioButton();
+            this.RbCtfAnswer3No = new System.Windows.Forms.RadioButton();
             this.BtnCtfSubmit = new System.Windows.Forms.Button();
             this.GbCtfSexChoices.SuspendLayout();
             this.GbCtfAnswers1.SuspendLayout();
@@ -236,9 +236,10 @@
             this.LblCtfContactNoFormat.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.LblCtfContactNoFormat.Location = new System.Drawing.Point(181, 386);
             this.LblCtfContactNoFormat.Name = "LblCtfContactNoFormat";
-            this.LblCtfContactNoFormat.Size = new System.Drawing.Size(88, 17);
+            this.LblCtfContactNoFormat.Size = new System.Drawing.Size(106, 17);
             this.LblCtfContactNoFormat.TabIndex = 15;
-            this.LblCtfContactNoFormat.Text = "(09*********)";
+            this.LblCtfContactNoFormat.Text = "(09123456789)";
+            this.LblCtfContactNoFormat.Click += new System.EventHandler(this.LblCtfContactNoFormat_Click);
             // 
             // TbCtfContactNo
             // 
@@ -464,7 +465,7 @@
             // 
             this.GbCtfAnswers3.BackColor = System.Drawing.Color.Transparent;
             this.GbCtfAnswers3.Controls.Add(this.RbCtfAnswer3Yes);
-            this.GbCtfAnswers3.Controls.Add(this.GbCtfAnswer3No);
+            this.GbCtfAnswers3.Controls.Add(this.RbCtfAnswer3No);
             this.GbCtfAnswers3.Location = new System.Drawing.Point(49, 785);
             this.GbCtfAnswers3.Name = "GbCtfAnswers3";
             this.GbCtfAnswers3.Size = new System.Drawing.Size(138, 48);
@@ -483,17 +484,17 @@
             this.RbCtfAnswer3Yes.Text = "Yes";
             this.RbCtfAnswer3Yes.UseVisualStyleBackColor = true;
             // 
-            // GbCtfAnswer3No
+            // RbCtfAnswer3No
             // 
-            this.GbCtfAnswer3No.AutoSize = true;
-            this.GbCtfAnswer3No.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.GbCtfAnswer3No.Location = new System.Drawing.Point(87, 18);
-            this.GbCtfAnswer3No.Name = "GbCtfAnswer3No";
-            this.GbCtfAnswer3No.Size = new System.Drawing.Size(47, 21);
-            this.GbCtfAnswer3No.TabIndex = 10;
-            this.GbCtfAnswer3No.TabStop = true;
-            this.GbCtfAnswer3No.Text = "No";
-            this.GbCtfAnswer3No.UseVisualStyleBackColor = true;
+            this.RbCtfAnswer3No.AutoSize = true;
+            this.RbCtfAnswer3No.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RbCtfAnswer3No.Location = new System.Drawing.Point(87, 18);
+            this.RbCtfAnswer3No.Name = "RbCtfAnswer3No";
+            this.RbCtfAnswer3No.Size = new System.Drawing.Size(47, 21);
+            this.RbCtfAnswer3No.TabIndex = 10;
+            this.RbCtfAnswer3No.TabStop = true;
+            this.RbCtfAnswer3No.Text = "No";
+            this.RbCtfAnswer3No.UseVisualStyleBackColor = true;
             // 
             // BtnCtfSubmit
             // 
@@ -510,7 +511,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(418, 893);
+            this.ClientSize = new System.Drawing.Size(418, 902);
             this.Controls.Add(this.BtnCtfSubmit);
             this.Controls.Add(this.GbCtfAnswers3);
             this.Controls.Add(this.GbCtfAnswers2);
@@ -602,7 +603,7 @@
         private RadioButton RbCtfAnswer2No;
         private GroupBox GbCtfAnswers3;
         private RadioButton RbCtfAnswer3Yes;
-        private RadioButton GbCtfAnswer3No;
+        private RadioButton RbCtfAnswer3No;
         private Button BtnCtfSubmit;
     }
 }

@@ -11,7 +11,7 @@ namespace Contact_Tracing_App
         
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            MessageBox.Show("This is a contact tracing app. Strictly follow the given format. Check your input data before clicking submit");
         }
 
         private void LblCtfName_Click(object sender, EventArgs e)
@@ -54,6 +54,41 @@ namespace Contact_Tracing_App
             string TimeIn = TbCtfTImeIn.Text;
             string TimeOut = TbCtfTimeOut.Text;
             string Sex = null;
+            string Answer1 = null;
+            string Answer2 = null;
+            string Answer3 = null;
+
+            if (TbCtfName.Text == "")
+            {
+                LblCtfName.ForeColor = Color.Red;
+                LblCtfNameFormat.ForeColor = Color.Red;
+            }
+            if (TbCtfAddress.Text == "")
+            {
+                LblCtfAddress.ForeColor = Color.Red;
+                LblCtfAddressFormat.ForeColor = Color.Red;
+            }
+            if (TbCtfAge.Text == "")
+            {
+                LblCtfAge.ForeColor = Color.Red;
+                LblCtfAgeFormat.ForeColor = Color.Red;
+            }
+            if (TbCtfContactNo.Text == "")
+            {
+                LblCtfContactNo.ForeColor = Color.Red;
+                LblCtfContactNoFormat.ForeColor = Color.Red;
+            }
+            if (TbCtfTImeIn.Text == "")
+            {
+                LblCtfTimeIn.ForeColor = Color.Red;
+                LblCtfTimeInFormat.ForeColor = Color.Red;
+            }
+            if (TbCtfTimeOut.Text == "")
+            {
+                LblCtfTimeOut.ForeColor = Color.Red;
+                LblCtfTimeOutFormat.ForeColor = Color.Red;
+            }
+
             if (RbCtfSexMale.Checked)
             {
                 Sex = "Male";
@@ -64,10 +99,10 @@ namespace Contact_Tracing_App
             }
             else
             {
-                MessageBox.Show("Choose Your Sex!");
+                LblCtfSex.ForeColor = Color.Red;
             }
 
-            string Answer1 = null;
+            
             if (RbCtfAnswer1Yes.Checked)
             {
                 Answer1 = "YES";
@@ -79,45 +114,71 @@ namespace Contact_Tracing_App
             }
             else
             {
-                MessageBox.Show("Answer Question 1 in Health Status!");
+                LblCtfQ1.ForeColor = Color.Red;
             }
 
-            string Answer2 = null;
+            
             if (RbCtfAnswer2Yes.Checked)
             {
                 Answer2 = "YES";
             }
 
-            else if (RbCtfAnswer1No.Checked)
+            else if (RbCtfAnswer2No.Checked)
             {
                 Answer2 = "NO";
             }
             else
             {
-                MessageBox.Show("Answer Question 2 in Health Status!");
+                LblCtfQ2.ForeColor = Color.Red;
             }
 
-            string Answer3 = null;
+            
             if (RbCtfAnswer3Yes.Checked)
             {
                 Answer3 = "YES";
             }
 
-            else if (RbCtfAnswer1No.Checked)
+            else if (RbCtfAnswer3No.Checked)
             {
                 Answer3 = "NO";
             }
             else
             {
-                MessageBox.Show("Answer Question 3 in Health Status!");
+                LblCtfQ3.ForeColor = Color.Red; 
             }
 
             if ((TbCtfName.Text == "") ||
                 (TbCtfAddress.Text == "") ||
-                (TbCtfAge.Text == "")
+                (TbCtfAge.Text == "") ||
+                (TbCtfTImeIn.Text == "") ||
+                (TbCtfTimeOut.Text == "") ||
+                ((!RbCtfSexMale.Checked) && (!RbCtfSexFemale.Checked)) ||
+                ((!RbCtfAnswer1Yes.Checked) && (!RbCtfAnswer1No.Checked)) ||
+                ((!RbCtfAnswer2Yes.Checked) && (!RbCtfAnswer2No.Checked)) ||
+                ((!RbCtfAnswer3Yes.Checked) && (!RbCtfAnswer3No.Checked))
                )
             {
                 MessageBox.Show("Fill All The Information Needed!");
+
+                    LblCtfName.ForeColor = Color.Black;
+                    LblCtfNameFormat.ForeColor = Color.Black;
+                    LblCtfAddress.ForeColor = Color.Black;
+                    LblCtfAddressFormat.ForeColor = Color.Black;
+                    LblCtfAge.ForeColor = Color.Black;
+                    LblCtfAgeFormat.ForeColor = Color.Black;
+                    LblCtfContactNo.ForeColor = Color.Black;
+                    LblCtfContactNoFormat.ForeColor = Color.Black;
+                    LblCtfTimeIn.ForeColor = Color.Black;
+                    LblCtfTimeInFormat.ForeColor = Color.Black;
+                    LblCtfTimeOut.ForeColor = Color.Black;
+                    LblCtfTimeOutFormat.ForeColor = Color.Black;
+                    LblCtfSex.ForeColor = Color.Black;
+                    LblCtfQ1.ForeColor = Color.Black;
+                    LblCtfQ2.ForeColor = Color.Black;
+                    LblCtfQ3.ForeColor = Color.Black;
+                
+
+
             }
             else
             {
@@ -134,6 +195,11 @@ namespace Contact_Tracing_App
                 file.WriteLine(LblCtfQ3.Text + " " + Answer3);
                 file.Close();
             }
+        }
+
+        private void LblCtfContactNoFormat_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
