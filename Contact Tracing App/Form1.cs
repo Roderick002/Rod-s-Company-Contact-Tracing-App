@@ -11,9 +11,11 @@ namespace Contact_Tracing_App
         
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-            MessageBox.Show("This is a contact tracing app. Strictly follow the given format. Check your input data before clicking submit");
-
+            //Instruction Panel
+            MessageBoxInstruction Mb2 = new MessageBoxInstruction();
+            Mb2.Owner = this;
+            Mb2.Show();
+           
       
         }
 
@@ -63,7 +65,7 @@ namespace Contact_Tracing_App
             string Answer2 = null;
             string Answer3 = null;
 
-
+            //Labels Fore Color Changing For Unfilled Information
             if (TbCtfName.Text == "")
             {
                 LblCtfName.ForeColor = Color.Red;
@@ -94,7 +96,8 @@ namespace Contact_Tracing_App
                 LblCtfTimeOut.ForeColor = Color.Red;
                 LblCtfTimeOutFormat.ForeColor = Color.Red;
             }
-
+            
+            //Radio Buttons(Sex, Q1, Q2, Q3) Return Value for Record
             if (RbCtfSexMale.Checked)
             {
                 Sex = "Male";
@@ -107,7 +110,6 @@ namespace Contact_Tracing_App
             {
                 LblCtfSex.ForeColor = Color.Red;
             }
-
             
             if (RbCtfAnswer1Yes.Checked)
             {
@@ -153,6 +155,7 @@ namespace Contact_Tracing_App
                 LblCtfQ3.ForeColor = Color.Red; 
             }
 
+            //Unfilled Information Condition
             if ((TbCtfName.Text == "") ||
                 (TbCtfAddress.Text == "") ||
                 (TbCtfAge.Text == "") ||
@@ -182,11 +185,10 @@ namespace Contact_Tracing_App
                     LblCtfSex.ForeColor = Color.Black;
                     LblCtfQ1.ForeColor = Color.Black;
                     LblCtfQ2.ForeColor = Color.Black;
-                    LblCtfQ3.ForeColor = Color.Black;
-                
-
-
+                    LblCtfQ3.ForeColor = Color.Black;              
             }
+
+            //Information Writing Format For Text File Record
             else
             {
                 StreamWriter file = File.AppendText(@"C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing Record.txt");
@@ -201,13 +203,14 @@ namespace Contact_Tracing_App
                 file.WriteLine(LblCtfQ3.Text + " " + Answer3);
                 file.WriteLine("");
                 file.Close();
-
+            
+            //Message Box for Another Response or Exit The Program
                 BtnCtfSubmit.Enabled = false;
-                MessageBoxSubmit m = new MessageBoxSubmit();
-                m.Owner = this;
-                m.Show();
+                MessageBoxSubmit Mb1 = new MessageBoxSubmit();
+                Mb1.Owner = this;
+                Mb1.Show();
 
-                
+            //Answers Field Return To Blank In Preparation For Another Response  
                 TbCtfName.Text = ("");
                 TbCtfAddress.Text = ("");
                 TbCtfAge.Text = ("");

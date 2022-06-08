@@ -34,21 +34,11 @@ namespace Contact_Tracing_App
 
         private void MessageBoxSubmit_Load(object sender, EventArgs e)
         {
-          
+            ControlBox = false;
 
            
         }
-        
-        private const int CP_NOCLOSE_BUTTON = 0x200;
-        protected override CreateParams CreateParams
-        {
-            get
-            {
-                CreateParams myCp = base.CreateParams;
-                myCp.ClassStyle = myCp.ClassStyle | CP_NOCLOSE_BUTTON;
-                return myCp;
-            }
-        }
+
         private void LblMb12_Click(object sender, EventArgs e)
         {
 

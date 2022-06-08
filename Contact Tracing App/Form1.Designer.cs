@@ -116,9 +116,9 @@
             this.LblCtfNameFormat.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.LblCtfNameFormat.Location = new System.Drawing.Point(129, 184);
             this.LblCtfNameFormat.Name = "LblCtfNameFormat";
-            this.LblCtfNameFormat.Size = new System.Drawing.Size(171, 17);
+            this.LblCtfNameFormat.Size = new System.Drawing.Size(167, 17);
             this.LblCtfNameFormat.TabIndex = 3;
-            this.LblCtfNameFormat.Text = "(First Name, Last Name)";
+            this.LblCtfNameFormat.Text = "(First Name Last Name)";
             // 
             // TbCtfName
             // 
@@ -592,6 +592,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "ContactTracing";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rod\'s Company Contact Tracing ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.GbCtfSexChoices.ResumeLayout(false);

@@ -64,7 +64,7 @@
             // 
             this.LblMb11.AutoSize = true;
             this.LblMb11.Font = new System.Drawing.Font("Baskerville Old Face", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.LblMb11.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.LblMb11.ForeColor = System.Drawing.Color.OrangeRed;
             this.LblMb11.Location = new System.Drawing.Point(46, 27);
             this.LblMb11.Name = "LblMb11";
             this.LblMb11.Size = new System.Drawing.Size(355, 68);
@@ -113,6 +113,7 @@
             this.Controls.Add(this.LblMb11);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MessageBoxSubmit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.MessageBoxSubmit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
