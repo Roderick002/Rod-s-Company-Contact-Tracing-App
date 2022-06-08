@@ -62,7 +62,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightCoral;
+            this.panel1.BackColor = System.Drawing.Color.MistyRose;
             this.panel1.Location = new System.Drawing.Point(-1, -4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(678, 10);
@@ -70,7 +70,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.LightCoral;
+            this.panel2.BackColor = System.Drawing.Color.MistyRose;
             this.panel2.Location = new System.Drawing.Point(-1, 135);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(675, 15);
