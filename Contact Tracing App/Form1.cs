@@ -11,7 +11,10 @@ namespace Contact_Tracing_App
         
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             MessageBox.Show("This is a contact tracing app. Strictly follow the given format. Check your input data before clicking submit");
+
+      
         }
 
         private void LblCtfName_Click(object sender, EventArgs e)
@@ -46,7 +49,9 @@ namespace Contact_Tracing_App
 
         private void BtnCtfSubmit_Click(object sender, EventArgs e)
         {
-         
+           
+
+            //Variable Declarations
             string Name = TbCtfName.Text;
             string Address = TbCtfAddress.Text;
             string Age = TbCtfAge.Text; 
@@ -57,6 +62,7 @@ namespace Contact_Tracing_App
             string Answer1 = null;
             string Answer2 = null;
             string Answer3 = null;
+
 
             if (TbCtfName.Text == "")
             {
@@ -150,6 +156,7 @@ namespace Contact_Tracing_App
             if ((TbCtfName.Text == "") ||
                 (TbCtfAddress.Text == "") ||
                 (TbCtfAge.Text == "") ||
+                (TbCtfContactNo.Text == "") ||
                 (TbCtfTImeIn.Text == "") ||
                 (TbCtfTimeOut.Text == "") ||
                 ((!RbCtfSexMale.Checked) && (!RbCtfSexFemale.Checked)) ||
@@ -183,7 +190,6 @@ namespace Contact_Tracing_App
             else
             {
                 StreamWriter file = File.AppendText(@"C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing Record.txt");
-                file.WriteLine("");
                 file.WriteLine("Name: " + Name);
                 file.WriteLine("Address: " + Address);
                 file.WriteLine("Age: " + Age);
@@ -193,11 +199,70 @@ namespace Contact_Tracing_App
                 file.WriteLine(LblCtfQ1.Text + " " + Answer1);
                 file.WriteLine(LblCtfQ2.Text + " " + Answer2);
                 file.WriteLine(LblCtfQ3.Text + " " + Answer3);
+                file.WriteLine("");
                 file.Close();
+
+                BtnCtfSubmit.Enabled = false;
+                MessageBoxSubmit m = new MessageBoxSubmit();
+                m.Owner = this;
+                m.Show();
+
+                
+                TbCtfName.Text = ("");
+                TbCtfAddress.Text = ("");
+                TbCtfAge.Text = ("");
+                TbCtfContactNo.Text = ("");
+                TbCtfTImeIn.Text = ("");
+                TbCtfTimeOut.Text = ("");
+                RbCtfSexMale.Checked = false; 
+                RbCtfSexFemale.Checked = false;
+                RbCtfAnswer1Yes.Checked = false;
+                RbCtfAnswer1No.Checked = false;
+                RbCtfAnswer2Yes.Checked = false;
+                RbCtfAnswer2No.Checked = false;
+                RbCtfAnswer3Yes.Checked = false;
+                RbCtfAnswer3No.Checked = false;
+                
             }
+            
         }
 
         private void LblCtfContactNoFormat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RbCtfAnswer1Yes_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RbCtfAnswer2Yes_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RbCtfAnswer2No_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void RbCtfAnswer3No_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RbCtfAnswer3Yes_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RbCtfSexMale_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RbCtfSexFemale_CheckedChanged(object sender, EventArgs e)
         {
 
         }

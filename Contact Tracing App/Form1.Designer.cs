@@ -69,6 +69,9 @@
             this.RbCtfAnswer3Yes = new System.Windows.Forms.RadioButton();
             this.RbCtfAnswer3No = new System.Windows.Forms.RadioButton();
             this.BtnCtfSubmit = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.GbCtfSexChoices.SuspendLayout();
             this.GbCtfAnswers1.SuspendLayout();
             this.GbCtfAnswers2.SuspendLayout();
@@ -119,6 +122,7 @@
             // 
             // TbCtfName
             // 
+            this.TbCtfName.BackColor = System.Drawing.Color.MistyRose;
             this.TbCtfName.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TbCtfName.Location = new System.Drawing.Point(30, 209);
             this.TbCtfName.Name = "TbCtfName";
@@ -142,12 +146,13 @@
             this.LblCtfAddressFormat.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.LblCtfAddressFormat.Location = new System.Drawing.Point(151, 246);
             this.LblCtfAddressFormat.Name = "LblCtfAddressFormat";
-            this.LblCtfAddressFormat.Size = new System.Drawing.Size(185, 17);
+            this.LblCtfAddressFormat.Size = new System.Drawing.Size(154, 17);
             this.LblCtfAddressFormat.TabIndex = 6;
-            this.LblCtfAddressFormat.Text = "(House No./Barangay/City)";
+            this.LblCtfAddressFormat.Text = "(Street/Barangay/City)";
             // 
             // TbCtfAddress
             // 
+            this.TbCtfAddress.BackColor = System.Drawing.Color.MistyRose;
             this.TbCtfAddress.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TbCtfAddress.Location = new System.Drawing.Point(30, 268);
             this.TbCtfAddress.Name = "TbCtfAddress";
@@ -169,6 +174,7 @@
             // RbCtfSexMale
             // 
             this.RbCtfSexMale.AutoSize = true;
+            this.RbCtfSexMale.BackColor = System.Drawing.Color.MistyRose;
             this.RbCtfSexMale.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.RbCtfSexMale.Location = new System.Drawing.Point(9, 19);
             this.RbCtfSexMale.Name = "RbCtfSexMale";
@@ -176,11 +182,13 @@
             this.RbCtfSexMale.TabIndex = 9;
             this.RbCtfSexMale.TabStop = true;
             this.RbCtfSexMale.Text = "Male";
-            this.RbCtfSexMale.UseVisualStyleBackColor = true;
+            this.RbCtfSexMale.UseVisualStyleBackColor = false;
+            this.RbCtfSexMale.CheckedChanged += new System.EventHandler(this.RbCtfSexMale_CheckedChanged);
             // 
             // RbCtfSexFemale
             // 
             this.RbCtfSexFemale.AutoSize = true;
+            this.RbCtfSexFemale.BackColor = System.Drawing.Color.MistyRose;
             this.RbCtfSexFemale.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.RbCtfSexFemale.Location = new System.Drawing.Point(87, 18);
             this.RbCtfSexFemale.Name = "RbCtfSexFemale";
@@ -188,7 +196,8 @@
             this.RbCtfSexFemale.TabIndex = 10;
             this.RbCtfSexFemale.TabStop = true;
             this.RbCtfSexFemale.Text = "Female";
-            this.RbCtfSexFemale.UseVisualStyleBackColor = true;
+            this.RbCtfSexFemale.UseVisualStyleBackColor = false;
+            this.RbCtfSexFemale.CheckedChanged += new System.EventHandler(this.RbCtfSexFemale_CheckedChanged);
             // 
             // LblCtfAge
             // 
@@ -213,6 +222,7 @@
             // 
             // TbCtfAge
             // 
+            this.TbCtfAge.BackColor = System.Drawing.Color.MistyRose;
             this.TbCtfAge.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TbCtfAge.Location = new System.Drawing.Point(230, 336);
             this.TbCtfAge.Name = "TbCtfAge";
@@ -243,6 +253,7 @@
             // 
             // TbCtfContactNo
             // 
+            this.TbCtfContactNo.BackColor = System.Drawing.Color.MistyRose;
             this.TbCtfContactNo.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TbCtfContactNo.Location = new System.Drawing.Point(30, 406);
             this.TbCtfContactNo.Name = "TbCtfContactNo";
@@ -292,6 +303,7 @@
             // 
             // TbCtfTImeIn
             // 
+            this.TbCtfTImeIn.BackColor = System.Drawing.Color.MistyRose;
             this.TbCtfTImeIn.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TbCtfTImeIn.Location = new System.Drawing.Point(29, 471);
             this.TbCtfTImeIn.Name = "TbCtfTImeIn";
@@ -302,6 +314,7 @@
             // 
             // TbCtfTimeOut
             // 
+            this.TbCtfTimeOut.BackColor = System.Drawing.Color.MistyRose;
             this.TbCtfTimeOut.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TbCtfTimeOut.Location = new System.Drawing.Point(227, 473);
             this.TbCtfTimeOut.Name = "TbCtfTimeOut";
@@ -394,6 +407,7 @@
             // GbCtfAnswers1
             // 
             this.GbCtfAnswers1.BackColor = System.Drawing.Color.Transparent;
+            this.GbCtfAnswers1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.GbCtfAnswers1.Controls.Add(this.RbCtfAnswer1Yes);
             this.GbCtfAnswers1.Controls.Add(this.RbCtfAnswer1No);
             this.GbCtfAnswers1.Location = new System.Drawing.Point(49, 604);
@@ -405,6 +419,7 @@
             // RbCtfAnswer1Yes
             // 
             this.RbCtfAnswer1Yes.AutoSize = true;
+            this.RbCtfAnswer1Yes.BackColor = System.Drawing.Color.MistyRose;
             this.RbCtfAnswer1Yes.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.RbCtfAnswer1Yes.Location = new System.Drawing.Point(9, 19);
             this.RbCtfAnswer1Yes.Name = "RbCtfAnswer1Yes";
@@ -412,11 +427,13 @@
             this.RbCtfAnswer1Yes.TabIndex = 9;
             this.RbCtfAnswer1Yes.TabStop = true;
             this.RbCtfAnswer1Yes.Text = "Yes";
-            this.RbCtfAnswer1Yes.UseVisualStyleBackColor = true;
+            this.RbCtfAnswer1Yes.UseVisualStyleBackColor = false;
+            this.RbCtfAnswer1Yes.CheckedChanged += new System.EventHandler(this.RbCtfAnswer1Yes_CheckedChanged);
             // 
             // RbCtfAnswer1No
             // 
             this.RbCtfAnswer1No.AutoSize = true;
+            this.RbCtfAnswer1No.BackColor = System.Drawing.Color.MistyRose;
             this.RbCtfAnswer1No.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.RbCtfAnswer1No.Location = new System.Drawing.Point(87, 18);
             this.RbCtfAnswer1No.Name = "RbCtfAnswer1No";
@@ -424,7 +441,7 @@
             this.RbCtfAnswer1No.TabIndex = 10;
             this.RbCtfAnswer1No.TabStop = true;
             this.RbCtfAnswer1No.Text = "No";
-            this.RbCtfAnswer1No.UseVisualStyleBackColor = true;
+            this.RbCtfAnswer1No.UseVisualStyleBackColor = false;
             // 
             // GbCtfAnswers2
             // 
@@ -440,6 +457,7 @@
             // RbCtfAnswer2Yes
             // 
             this.RbCtfAnswer2Yes.AutoSize = true;
+            this.RbCtfAnswer2Yes.BackColor = System.Drawing.Color.MistyRose;
             this.RbCtfAnswer2Yes.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.RbCtfAnswer2Yes.Location = new System.Drawing.Point(9, 19);
             this.RbCtfAnswer2Yes.Name = "RbCtfAnswer2Yes";
@@ -447,11 +465,13 @@
             this.RbCtfAnswer2Yes.TabIndex = 9;
             this.RbCtfAnswer2Yes.TabStop = true;
             this.RbCtfAnswer2Yes.Text = "Yes";
-            this.RbCtfAnswer2Yes.UseVisualStyleBackColor = true;
+            this.RbCtfAnswer2Yes.UseVisualStyleBackColor = false;
+            this.RbCtfAnswer2Yes.CheckedChanged += new System.EventHandler(this.RbCtfAnswer2Yes_CheckedChanged);
             // 
             // RbCtfAnswer2No
             // 
             this.RbCtfAnswer2No.AutoSize = true;
+            this.RbCtfAnswer2No.BackColor = System.Drawing.Color.MistyRose;
             this.RbCtfAnswer2No.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.RbCtfAnswer2No.Location = new System.Drawing.Point(87, 18);
             this.RbCtfAnswer2No.Name = "RbCtfAnswer2No";
@@ -459,7 +479,8 @@
             this.RbCtfAnswer2No.TabIndex = 10;
             this.RbCtfAnswer2No.TabStop = true;
             this.RbCtfAnswer2No.Text = "No";
-            this.RbCtfAnswer2No.UseVisualStyleBackColor = true;
+            this.RbCtfAnswer2No.UseVisualStyleBackColor = false;
+            this.RbCtfAnswer2No.CheckedChanged += new System.EventHandler(this.RbCtfAnswer2No_CheckedChanged);
             // 
             // GbCtfAnswers3
             // 
@@ -475,6 +496,7 @@
             // RbCtfAnswer3Yes
             // 
             this.RbCtfAnswer3Yes.AutoSize = true;
+            this.RbCtfAnswer3Yes.BackColor = System.Drawing.Color.MistyRose;
             this.RbCtfAnswer3Yes.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.RbCtfAnswer3Yes.Location = new System.Drawing.Point(9, 19);
             this.RbCtfAnswer3Yes.Name = "RbCtfAnswer3Yes";
@@ -482,11 +504,13 @@
             this.RbCtfAnswer3Yes.TabIndex = 9;
             this.RbCtfAnswer3Yes.TabStop = true;
             this.RbCtfAnswer3Yes.Text = "Yes";
-            this.RbCtfAnswer3Yes.UseVisualStyleBackColor = true;
+            this.RbCtfAnswer3Yes.UseVisualStyleBackColor = false;
+            this.RbCtfAnswer3Yes.CheckedChanged += new System.EventHandler(this.RbCtfAnswer3Yes_CheckedChanged);
             // 
             // RbCtfAnswer3No
             // 
             this.RbCtfAnswer3No.AutoSize = true;
+            this.RbCtfAnswer3No.BackColor = System.Drawing.Color.MistyRose;
             this.RbCtfAnswer3No.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.RbCtfAnswer3No.Location = new System.Drawing.Point(87, 18);
             this.RbCtfAnswer3No.Name = "RbCtfAnswer3No";
@@ -494,24 +518,44 @@
             this.RbCtfAnswer3No.TabIndex = 10;
             this.RbCtfAnswer3No.TabStop = true;
             this.RbCtfAnswer3No.Text = "No";
-            this.RbCtfAnswer3No.UseVisualStyleBackColor = true;
+            this.RbCtfAnswer3No.UseVisualStyleBackColor = false;
+            this.RbCtfAnswer3No.CheckedChanged += new System.EventHandler(this.RbCtfAnswer3No_CheckedChanged);
             // 
             // BtnCtfSubmit
             // 
+            this.BtnCtfSubmit.BackColor = System.Drawing.Color.MistyRose;
             this.BtnCtfSubmit.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnCtfSubmit.Location = new System.Drawing.Point(117, 854);
             this.BtnCtfSubmit.Name = "BtnCtfSubmit";
             this.BtnCtfSubmit.Size = new System.Drawing.Size(147, 29);
             this.BtnCtfSubmit.TabIndex = 40;
             this.BtnCtfSubmit.Text = "Submit";
-            this.BtnCtfSubmit.UseVisualStyleBackColor = true;
+            this.BtnCtfSubmit.UseVisualStyleBackColor = false;
             this.BtnCtfSubmit.Click += new System.EventHandler(this.BtnCtfSubmit_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightCoral;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(10, 902);
+            this.panel1.TabIndex = 41;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.LightCoral;
+            this.panel2.Location = new System.Drawing.Point(408, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(10, 902);
+            this.panel2.TabIndex = 42;
             // 
             // ContactTracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(418, 902);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.BtnCtfSubmit);
             this.Controls.Add(this.GbCtfAnswers3);
             this.Controls.Add(this.GbCtfAnswers2);
@@ -545,9 +589,10 @@
             this.Controls.Add(this.LblCtfName);
             this.Controls.Add(this.LblCtfInstruction1);
             this.Controls.Add(this.LblCtfPersonlInfo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "ContactTracing";
-            this.Text = "Contact Tracing";
+            this.Text = "Rod\'s Company Contact Tracing ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.GbCtfSexChoices.ResumeLayout(false);
             this.GbCtfSexChoices.PerformLayout();
@@ -604,6 +649,9 @@
         private GroupBox GbCtfAnswers3;
         private RadioButton RbCtfAnswer3Yes;
         private RadioButton RbCtfAnswer3No;
-        private Button BtnCtfSubmit;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Panel panel1;
+        private Panel panel2;
+        public Button BtnCtfSubmit;
     }
 }
