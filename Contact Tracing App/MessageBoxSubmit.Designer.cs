@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MessageBoxSubmit));
             this.BtnMb1Yes = new System.Windows.Forms.Button();
             this.BtnMb1Exit = new System.Windows.Forms.Button();
             this.LblMb11 = new System.Windows.Forms.Label();
@@ -40,9 +41,9 @@
             // 
             this.BtnMb1Yes.BackColor = System.Drawing.Color.MistyRose;
             this.BtnMb1Yes.Font = new System.Drawing.Font("Baskerville Old Face", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnMb1Yes.Location = new System.Drawing.Point(91, 149);
+            this.BtnMb1Yes.Location = new System.Drawing.Point(69, 153);
             this.BtnMb1Yes.Name = "BtnMb1Yes";
-            this.BtnMb1Yes.Size = new System.Drawing.Size(100, 30);
+            this.BtnMb1Yes.Size = new System.Drawing.Size(142, 30);
             this.BtnMb1Yes.TabIndex = 0;
             this.BtnMb1Yes.Text = "YES";
             this.BtnMb1Yes.UseVisualStyleBackColor = false;
@@ -52,11 +53,11 @@
             // 
             this.BtnMb1Exit.BackColor = System.Drawing.Color.MistyRose;
             this.BtnMb1Exit.Font = new System.Drawing.Font("Baskerville Old Face", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnMb1Exit.Location = new System.Drawing.Point(248, 149);
+            this.BtnMb1Exit.Location = new System.Drawing.Point(249, 154);
             this.BtnMb1Exit.Name = "BtnMb1Exit";
-            this.BtnMb1Exit.Size = new System.Drawing.Size(100, 30);
+            this.BtnMb1Exit.Size = new System.Drawing.Size(141, 30);
             this.BtnMb1Exit.TabIndex = 1;
-            this.BtnMb1Exit.Text = "EXIT";
+            this.BtnMb1Exit.Text = "BACKTO MENU";
             this.BtnMb1Exit.UseVisualStyleBackColor = false;
             this.BtnMb1Exit.Click += new System.EventHandler(this.BtnMb1Exit_Click);
             // 
@@ -111,7 +112,10 @@
             this.Controls.Add(this.BtnMb1Exit);
             this.Controls.Add(this.BtnMb1Yes);
             this.Controls.Add(this.LblMb11);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MessageBoxSubmit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.MessageBoxSubmit_Load);

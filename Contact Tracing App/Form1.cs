@@ -6,17 +6,12 @@ namespace Contact_Tracing_App
         public ContactTracing()
         {
             InitializeComponent();
-           
         }
         
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Instruction Panel
-            MessageBoxInstruction Mb2 = new MessageBoxInstruction();
-            Mb2.Owner = this;
-            Mb2.Show();
-           
-      
+
+            
         }
 
         private void LblCtfName_Click(object sender, EventArgs e)
@@ -64,6 +59,7 @@ namespace Contact_Tracing_App
             string Answer1 = null;
             string Answer2 = null;
             string Answer3 = null;
+            string Date = DtpCtfDate.Value.ToString("dd/MM/yyyy");
 
             //Labels Fore Color Changing For Unfilled Information
             if (TbCtfName.Text == "")
@@ -192,12 +188,13 @@ namespace Contact_Tracing_App
             else
             {
                 StreamWriter file = File.AppendText(@"C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing Record.txt");
+                file.WriteLine("Date: " + Date);
+                file.WriteLine("Time In: " + TimeIn + "   Time Out: " + TimeOut);
                 file.WriteLine("Name: " + Name);
                 file.WriteLine("Address: " + Address);
                 file.WriteLine("Age: " + Age);
                 file.WriteLine("Sex: " + Sex);
                 file.WriteLine("Contact Number: " + ContactNumber);
-                file.WriteLine("Time In: " + TimeIn + "   Time Out: " + TimeOut);
                 file.WriteLine(LblCtfQ1.Text + " " + Answer1);
                 file.WriteLine(LblCtfQ2.Text + " " + Answer2);
                 file.WriteLine(LblCtfQ3.Text + " " + Answer3);

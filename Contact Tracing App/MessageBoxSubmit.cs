@@ -21,8 +21,12 @@ namespace Contact_Tracing_App
         {
 
             ((ContactTracing)Owner).BtnCtfSubmit.Enabled = true;
-                      
-             this.Close();
+
+            ContactTracing Ctf = new ContactTracing();
+            Ctf.Owner = this;
+            Ctf.Show();
+            
+            this.Close();
             
            
         }
@@ -46,7 +50,11 @@ namespace Contact_Tracing_App
 
         private void BtnMb1Exit_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            CTFMenu Ctf = new CTFMenu();
+            Ctf.Owner = this;
+            Ctf.Show();
+
+            this.Close();
         }
     }
 }

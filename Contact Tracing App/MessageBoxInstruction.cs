@@ -21,5 +21,14 @@ namespace Contact_Tracing_App
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CTFMenu Mb2 = new CTFMenu();
+            Mb2.Owner = this;
+            Mb2.Show();
+            
+           this.Hide();
+        }
     }
 }

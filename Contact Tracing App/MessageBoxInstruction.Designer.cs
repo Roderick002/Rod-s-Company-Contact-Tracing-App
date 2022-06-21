@@ -33,6 +33,7 @@
             this.LblMbi1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.BtnMbIb = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PbMbi1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,7 +41,7 @@
             // 
             this.PbMbi1.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.Capture;
             this.PbMbi1.Image = global::Contact_Tracing_App.Properties.Resources.Capture1;
-            this.PbMbi1.Location = new System.Drawing.Point(12, 16);
+            this.PbMbi1.Location = new System.Drawing.Point(12, 20);
             this.PbMbi1.Name = "PbMbi1";
             this.PbMbi1.Size = new System.Drawing.Size(115, 107);
             this.PbMbi1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -53,7 +54,7 @@
             this.LblMbi1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LblMbi1.AutoSize = true;
             this.LblMbi1.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblMbi1.Location = new System.Drawing.Point(133, 34);
+            this.LblMbi1.Location = new System.Drawing.Point(133, 36);
             this.LblMbi1.Name = "LblMbi1";
             this.LblMbi1.Size = new System.Drawing.Size(532, 72);
             this.LblMbi1.TabIndex = 1;
@@ -71,22 +72,37 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.MistyRose;
-            this.panel2.Location = new System.Drawing.Point(-1, 135);
+            this.panel2.Location = new System.Drawing.Point(-1, 154);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(675, 15);
             this.panel2.TabIndex = 3;
+            // 
+            // BtnMbIb
+            // 
+            this.BtnMbIb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BtnMbIb.Font = new System.Drawing.Font("Baskerville Old Face", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnMbIb.Location = new System.Drawing.Point(266, 118);
+            this.BtnMbIb.Name = "BtnMbIb";
+            this.BtnMbIb.Size = new System.Drawing.Size(137, 29);
+            this.BtnMbIb.TabIndex = 4;
+            this.BtnMbIb.Text = "I Understand";
+            this.BtnMbIb.UseVisualStyleBackColor = false;
+            this.BtnMbIb.Click += new System.EventHandler(this.button1_Click);
             // 
             // MessageBoxInstruction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(670, 141);
+            this.ClientSize = new System.Drawing.Size(670, 159);
+            this.Controls.Add(this.BtnMbIb);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LblMbi1);
             this.Controls.Add(this.PbMbi1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MessageBoxInstruction";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Read This!";
@@ -102,5 +118,6 @@
         private Label LblMbi1;
         private Panel panel1;
         private Panel panel2;
+        private Button BtnMbIb;
     }
 }

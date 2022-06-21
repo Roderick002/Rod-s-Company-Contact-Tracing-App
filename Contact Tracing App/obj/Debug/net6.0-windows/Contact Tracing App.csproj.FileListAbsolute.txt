@@ -1,9 +1,11 @@
 C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\bin\Debug\net6.0-windows\Contact Tracing App.exe
-C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\bin\Debug\net6.0-windows\Contact Tracing App.deps.json
-C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\bin\Debug\net6.0-windows\Contact Tracing App.runtimeconfig.json
 C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\bin\Debug\net6.0-windows\Contact Tracing App.dll
-C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\bin\Debug\net6.0-windows\Contact Tracing App.pdb
 C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.csproj.AssemblyReference.cache
+C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.CTFMenu.resources
+C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.ContactTracing.resources
+C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.MessageBoxInstruction.resources
+C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.MessageBoxSubmit.resources
+C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.Properties.Resources.resources
 C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.csproj.GenerateResource.cache
 C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.AssemblyInfoInputs.cache
@@ -12,9 +14,9 @@ C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App
 C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.dll
 C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\refint\Contact Tracing App.dll
 C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.pdb
+C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\bin\Debug\net6.0-windows\Contact Tracing App.deps.json
+C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\bin\Debug\net6.0-windows\Contact Tracing App.runtimeconfig.json
+C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\bin\Debug\net6.0-windows\Contact Tracing App.pdb
 C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.genruntimeconfig.cache
 C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\ref\Contact Tracing App.dll
-C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.ContactTracing.resources
-C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.MessageBoxSubmit.resources
-C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.Properties.Resources.resources
-C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.MessageBoxInstruction.resources
+C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.ContactTracingRecords.resources

@@ -57,8 +57,6 @@
             this.LblCtfQ1 = new System.Windows.Forms.Label();
             this.LblCtfQ2 = new System.Windows.Forms.Label();
             this.LblCtfQ3 = new System.Windows.Forms.Label();
-            this.LblCtfTitle = new System.Windows.Forms.Label();
-            this.LblCtfSubTitle = new System.Windows.Forms.Label();
             this.GbCtfSexChoices = new System.Windows.Forms.GroupBox();
             this.GbCtfAnswers1 = new System.Windows.Forms.GroupBox();
             this.RbCtfAnswer1Yes = new System.Windows.Forms.RadioButton();
@@ -81,6 +79,9 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.DtpCtfDate = new System.Windows.Forms.DateTimePicker();
+            this.LblCtfDate = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.GbCtfSexChoices.SuspendLayout();
             this.GbCtfAnswers1.SuspendLayout();
             this.GbCtfAnswers2.SuspendLayout();
@@ -92,7 +93,7 @@
             this.LblCtfPersonlInfo.AutoSize = true;
             this.LblCtfPersonlInfo.BackColor = System.Drawing.Color.Transparent;
             this.LblCtfPersonlInfo.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblCtfPersonlInfo.Location = new System.Drawing.Point(39, 116);
+            this.LblCtfPersonlInfo.Location = new System.Drawing.Point(39, 47);
             this.LblCtfPersonlInfo.Name = "LblCtfPersonlInfo";
             this.LblCtfPersonlInfo.Size = new System.Drawing.Size(344, 35);
             this.LblCtfPersonlInfo.TabIndex = 0;
@@ -104,7 +105,7 @@
             this.LblCtfInstruction1.AutoSize = true;
             this.LblCtfInstruction1.BackColor = System.Drawing.Color.Transparent;
             this.LblCtfInstruction1.Font = new System.Drawing.Font("Arial", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.LblCtfInstruction1.Location = new System.Drawing.Point(16, 158);
+            this.LblCtfInstruction1.Location = new System.Drawing.Point(16, 89);
             this.LblCtfInstruction1.Name = "LblCtfInstruction1";
             this.LblCtfInstruction1.Size = new System.Drawing.Size(350, 19);
             this.LblCtfInstruction1.TabIndex = 1;
@@ -115,7 +116,7 @@
             this.LblCtfName.AutoSize = true;
             this.LblCtfName.BackColor = System.Drawing.Color.Transparent;
             this.LblCtfName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblCtfName.Location = new System.Drawing.Point(26, 183);
+            this.LblCtfName.Location = new System.Drawing.Point(26, 115);
             this.LblCtfName.Name = "LblCtfName";
             this.LblCtfName.Size = new System.Drawing.Size(110, 20);
             this.LblCtfName.TabIndex = 2;
@@ -127,7 +128,7 @@
             this.LblCtfNameFormat.AutoSize = true;
             this.LblCtfNameFormat.BackColor = System.Drawing.Color.Transparent;
             this.LblCtfNameFormat.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.LblCtfNameFormat.Location = new System.Drawing.Point(129, 184);
+            this.LblCtfNameFormat.Location = new System.Drawing.Point(129, 116);
             this.LblCtfNameFormat.Name = "LblCtfNameFormat";
             this.LblCtfNameFormat.Size = new System.Drawing.Size(167, 17);
             this.LblCtfNameFormat.TabIndex = 3;
@@ -137,7 +138,7 @@
             // 
             this.TbCtfName.BackColor = System.Drawing.Color.White;
             this.TbCtfName.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TbCtfName.Location = new System.Drawing.Point(30, 209);
+            this.TbCtfName.Location = new System.Drawing.Point(30, 141);
             this.TbCtfName.Name = "TbCtfName";
             this.TbCtfName.Size = new System.Drawing.Size(355, 25);
             this.TbCtfName.TabIndex = 4;
@@ -148,7 +149,7 @@
             this.LblCtfAddress.AutoSize = true;
             this.LblCtfAddress.BackColor = System.Drawing.Color.Transparent;
             this.LblCtfAddress.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblCtfAddress.Location = new System.Drawing.Point(26, 245);
+            this.LblCtfAddress.Location = new System.Drawing.Point(26, 177);
             this.LblCtfAddress.Name = "LblCtfAddress";
             this.LblCtfAddress.Size = new System.Drawing.Size(131, 20);
             this.LblCtfAddress.TabIndex = 5;
@@ -159,7 +160,7 @@
             this.LblCtfAddressFormat.AutoSize = true;
             this.LblCtfAddressFormat.BackColor = System.Drawing.Color.Transparent;
             this.LblCtfAddressFormat.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.LblCtfAddressFormat.Location = new System.Drawing.Point(151, 246);
+            this.LblCtfAddressFormat.Location = new System.Drawing.Point(151, 178);
             this.LblCtfAddressFormat.Name = "LblCtfAddressFormat";
             this.LblCtfAddressFormat.Size = new System.Drawing.Size(154, 17);
             this.LblCtfAddressFormat.TabIndex = 6;
@@ -169,7 +170,7 @@
             // 
             this.TbCtfAddress.BackColor = System.Drawing.Color.White;
             this.TbCtfAddress.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TbCtfAddress.Location = new System.Drawing.Point(30, 268);
+            this.TbCtfAddress.Location = new System.Drawing.Point(30, 200);
             this.TbCtfAddress.Name = "TbCtfAddress";
             this.TbCtfAddress.Size = new System.Drawing.Size(355, 25);
             this.TbCtfAddress.TabIndex = 7;
@@ -180,7 +181,7 @@
             this.LblCtfSex.AutoSize = true;
             this.LblCtfSex.BackColor = System.Drawing.Color.Transparent;
             this.LblCtfSex.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblCtfSex.Location = new System.Drawing.Point(28, 308);
+            this.LblCtfSex.Location = new System.Drawing.Point(28, 240);
             this.LblCtfSex.Name = "LblCtfSex";
             this.LblCtfSex.Size = new System.Drawing.Size(44, 20);
             this.LblCtfSex.TabIndex = 8;
@@ -220,7 +221,7 @@
             this.LblCtfAge.AutoSize = true;
             this.LblCtfAge.BackColor = System.Drawing.Color.Transparent;
             this.LblCtfAge.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblCtfAge.Location = new System.Drawing.Point(226, 308);
+            this.LblCtfAge.Location = new System.Drawing.Point(226, 240);
             this.LblCtfAge.Name = "LblCtfAge";
             this.LblCtfAge.Size = new System.Drawing.Size(47, 20);
             this.LblCtfAge.TabIndex = 11;
@@ -231,7 +232,7 @@
             this.LblCtfAgeFormat.AutoSize = true;
             this.LblCtfAgeFormat.BackColor = System.Drawing.Color.Transparent;
             this.LblCtfAgeFormat.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.LblCtfAgeFormat.Location = new System.Drawing.Point(267, 310);
+            this.LblCtfAgeFormat.Location = new System.Drawing.Point(267, 242);
             this.LblCtfAgeFormat.Name = "LblCtfAgeFormat";
             this.LblCtfAgeFormat.Size = new System.Drawing.Size(72, 17);
             this.LblCtfAgeFormat.TabIndex = 12;
@@ -242,7 +243,7 @@
             // 
             this.TbCtfAge.BackColor = System.Drawing.Color.White;
             this.TbCtfAge.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TbCtfAge.Location = new System.Drawing.Point(230, 336);
+            this.TbCtfAge.Location = new System.Drawing.Point(230, 268);
             this.TbCtfAge.Name = "TbCtfAge";
             this.TbCtfAge.Size = new System.Drawing.Size(114, 25);
             this.TbCtfAge.TabIndex = 13;
@@ -253,7 +254,7 @@
             this.LblCtfContactNo.AutoSize = true;
             this.LblCtfContactNo.BackColor = System.Drawing.Color.Transparent;
             this.LblCtfContactNo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblCtfContactNo.Location = new System.Drawing.Point(26, 383);
+            this.LblCtfContactNo.Location = new System.Drawing.Point(26, 315);
             this.LblCtfContactNo.Name = "LblCtfContactNo";
             this.LblCtfContactNo.Size = new System.Drawing.Size(159, 20);
             this.LblCtfContactNo.TabIndex = 14;
@@ -264,7 +265,7 @@
             this.LblCtfContactNoFormat.AutoSize = true;
             this.LblCtfContactNoFormat.BackColor = System.Drawing.Color.Transparent;
             this.LblCtfContactNoFormat.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.LblCtfContactNoFormat.Location = new System.Drawing.Point(181, 384);
+            this.LblCtfContactNoFormat.Location = new System.Drawing.Point(181, 316);
             this.LblCtfContactNoFormat.Name = "LblCtfContactNoFormat";
             this.LblCtfContactNoFormat.Size = new System.Drawing.Size(106, 17);
             this.LblCtfContactNoFormat.TabIndex = 15;
@@ -275,7 +276,7 @@
             // 
             this.TbCtfContactNo.BackColor = System.Drawing.Color.White;
             this.TbCtfContactNo.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TbCtfContactNo.Location = new System.Drawing.Point(30, 406);
+            this.TbCtfContactNo.Location = new System.Drawing.Point(30, 338);
             this.TbCtfContactNo.Name = "TbCtfContactNo";
             this.TbCtfContactNo.Size = new System.Drawing.Size(355, 25);
             this.TbCtfContactNo.TabIndex = 16;
@@ -403,34 +404,12 @@
             this.LblCtfQ3.Text = "3. Did you travel outside the country\r\n for the past 2 weeks?";
             this.LblCtfQ3.Click += new System.EventHandler(this.LblCtfQ3_Click);
             // 
-            // LblCtfTitle
-            // 
-            this.LblCtfTitle.AutoSize = true;
-            this.LblCtfTitle.BackColor = System.Drawing.Color.Transparent;
-            this.LblCtfTitle.Font = new System.Drawing.Font("Cooper Black", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblCtfTitle.Location = new System.Drawing.Point(8, 23);
-            this.LblCtfTitle.Name = "LblCtfTitle";
-            this.LblCtfTitle.Size = new System.Drawing.Size(400, 49);
-            this.LblCtfTitle.TabIndex = 28;
-            this.LblCtfTitle.Text = "ROD\'s COMPANY";
-            // 
-            // LblCtfSubTitle
-            // 
-            this.LblCtfSubTitle.AutoSize = true;
-            this.LblCtfSubTitle.BackColor = System.Drawing.Color.Transparent;
-            this.LblCtfSubTitle.Font = new System.Drawing.Font("Arial", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.LblCtfSubTitle.Location = new System.Drawing.Point(84, 73);
-            this.LblCtfSubTitle.Name = "LblCtfSubTitle";
-            this.LblCtfSubTitle.Size = new System.Drawing.Size(248, 26);
-            this.LblCtfSubTitle.TabIndex = 29;
-            this.LblCtfSubTitle.Text = "Contact Tracing Form";
-            // 
             // GbCtfSexChoices
             // 
             this.GbCtfSexChoices.BackColor = System.Drawing.Color.Transparent;
             this.GbCtfSexChoices.Controls.Add(this.RbCtfSexMale);
             this.GbCtfSexChoices.Controls.Add(this.RbCtfSexFemale);
-            this.GbCtfSexChoices.Location = new System.Drawing.Point(30, 324);
+            this.GbCtfSexChoices.Location = new System.Drawing.Point(30, 256);
             this.GbCtfSexChoices.Name = "GbCtfSexChoices";
             this.GbCtfSexChoices.Size = new System.Drawing.Size(165, 48);
             this.GbCtfSexChoices.TabIndex = 36;
@@ -557,7 +536,7 @@
             // 
             this.BtnCtfSubmit.BackColor = System.Drawing.Color.MistyRose;
             this.BtnCtfSubmit.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnCtfSubmit.Location = new System.Drawing.Point(117, 854);
+            this.BtnCtfSubmit.Location = new System.Drawing.Point(117, 844);
             this.BtnCtfSubmit.Name = "BtnCtfSubmit";
             this.BtnCtfSubmit.Size = new System.Drawing.Size(147, 29);
             this.BtnCtfSubmit.TabIndex = 40;
@@ -568,7 +547,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MistyRose;
-            this.panel1.Location = new System.Drawing.Point(-2, 0);
+            this.panel1.Location = new System.Drawing.Point(-2, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(10, 902);
             this.panel1.TabIndex = 41;
@@ -576,7 +555,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.MistyRose;
-            this.panel2.Location = new System.Drawing.Point(410, 0);
+            this.panel2.Location = new System.Drawing.Point(411, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(10, 902);
             this.panel2.TabIndex = 42;
@@ -584,7 +563,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MistyRose;
-            this.panel3.Location = new System.Drawing.Point(26, 205);
+            this.panel3.Location = new System.Drawing.Point(26, 137);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(363, 32);
             this.panel3.TabIndex = 43;
@@ -592,7 +571,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.MistyRose;
-            this.panel4.Location = new System.Drawing.Point(26, 264);
+            this.panel4.Location = new System.Drawing.Point(26, 196);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(363, 32);
             this.panel4.TabIndex = 44;
@@ -600,7 +579,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.MistyRose;
-            this.panel5.Location = new System.Drawing.Point(26, 402);
+            this.panel5.Location = new System.Drawing.Point(26, 334);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(363, 32);
             this.panel5.TabIndex = 45;
@@ -624,7 +603,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.MistyRose;
-            this.panel8.Location = new System.Drawing.Point(226, 332);
+            this.panel8.Location = new System.Drawing.Point(226, 264);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(123, 32);
             this.panel8.TabIndex = 48;
@@ -632,7 +611,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.MistyRose;
-            this.panel9.Location = new System.Drawing.Point(8, 894);
+            this.panel9.Location = new System.Drawing.Point(8, 895);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(403, 13);
             this.panel9.TabIndex = 43;
@@ -640,10 +619,37 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.MistyRose;
-            this.panel10.Location = new System.Drawing.Point(8, -5);
+            this.panel10.Location = new System.Drawing.Point(8, -4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(403, 13);
             this.panel10.TabIndex = 44;
+            // 
+            // DtpCtfDate
+            // 
+            this.DtpCtfDate.CalendarFont = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DtpCtfDate.Location = new System.Drawing.Point(81, 403);
+            this.DtpCtfDate.Name = "DtpCtfDate";
+            this.DtpCtfDate.Size = new System.Drawing.Size(250, 27);
+            this.DtpCtfDate.TabIndex = 49;
+            // 
+            // LblCtfDate
+            // 
+            this.LblCtfDate.AutoSize = true;
+            this.LblCtfDate.BackColor = System.Drawing.Color.Transparent;
+            this.LblCtfDate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblCtfDate.Location = new System.Drawing.Point(176, 377);
+            this.LblCtfDate.Name = "LblCtfDate";
+            this.LblCtfDate.Size = new System.Drawing.Size(53, 20);
+            this.LblCtfDate.TabIndex = 50;
+            this.LblCtfDate.Text = "Date:";
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.MistyRose;
+            this.panel11.Location = new System.Drawing.Point(76, 398);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(260, 37);
+            this.panel11.TabIndex = 48;
             // 
             // ContactTracing
             // 
@@ -653,6 +659,8 @@
             this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.png_20220608_155255_0000;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(418, 902);
+            this.Controls.Add(this.LblCtfDate);
+            this.Controls.Add(this.DtpCtfDate);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel2);
@@ -662,8 +670,6 @@
             this.Controls.Add(this.GbCtfAnswers2);
             this.Controls.Add(this.GbCtfAnswers1);
             this.Controls.Add(this.GbCtfSexChoices);
-            this.Controls.Add(this.LblCtfSubTitle);
-            this.Controls.Add(this.LblCtfTitle);
             this.Controls.Add(this.LblCtfQ3);
             this.Controls.Add(this.LblCtfQ2);
             this.Controls.Add(this.LblCtfQ1);
@@ -696,13 +702,14 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel11);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ContactTracing";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Rod\'s Company Contact Tracing ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.GbCtfSexChoices.ResumeLayout(false);
             this.GbCtfSexChoices.PerformLayout();
@@ -747,8 +754,6 @@
         private Label LblCtfQ1;
         private Label LblCtfQ2;
         private Label LblCtfQ3;
-        private Label LblCtfTitle;
-        private Label LblCtfSubTitle;
         private GroupBox GbCtfSexChoices;
         private GroupBox GbCtfAnswers1;
         private RadioButton RbCtfAnswer1Yes;
@@ -771,5 +776,8 @@
         private Panel panel8;
         private Panel panel9;
         private Panel panel10;
+        private DateTimePicker DtpCtfDate;
+        private Label LblCtfDate;
+        private Panel panel11;
     }
 }
