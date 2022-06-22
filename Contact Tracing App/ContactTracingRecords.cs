@@ -26,13 +26,16 @@ namespace Contact_Tracing_App
         {
             StreamReader file = new StreamReader(@"C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing Record.txt");
 
+            LbCtfRecordList.Items.Clear();
             string records;
             do
             {
                 records = file.ReadLine();
-                LbCtfRecordList.Items.Add (records.ToString());
-            } while (records != null);
-            
+
+                LbCtfRecordList.Items.Add(records.ToString());
+                         
+            } while (!file.EndOfStream);
+
 
         }
 
@@ -42,6 +45,18 @@ namespace Contact_Tracing_App
             Menu.Show();
 
             this.Hide();
+        }
+       
+        //Disable X button
+        private const int CP_NO_CLOSE_BUTTON = 0x200;
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams myCp = base.CreateParams;
+                myCp.ClassStyle = myCp.ClassStyle | CP_NO_CLOSE_BUTTON;
+                return myCp;
+            }
         }
     }
 }

@@ -23,3 +23,81 @@ Contact Number: qwq
 3. Did you travel outside the country
  for the past 2 weeks? NO
 
+Date: 21/06/2022
+Time In: we   Time Out: we
+Name: John
+Address: ewe
+Age: ewew
+Sex: Male
+Contact Number: wew
+1. Do you feel sick? YES
+2. Did you come into contact with
+ anyone that feels unwell? YES
+3. Did you travel outside the country
+ for the past 2 weeks? YES
+
+Date: 21/06/2022
+Time In: ewew   Time Out: ewe
+Name: we
+Address: wewe
+Age: wewe
+Sex: Male
+Contact Number: ewew
+1. Do you feel sick? NO
+2. Did you come into contact with
+ anyone that feels unwell? NO
+3. Did you travel outside the country
+ for the past 2 weeks? NO
+
+Date: 21/06/2022
+Time In: wew   Time Out: ewe
+Name: wewewe
+Address: wew
+Age: ewe
+Sex: Female
+Contact Number: ewew
+1. Do you feel sick? YES
+2. Did you come into contact with
+ anyone that feels unwell? YES
+3. Did you travel outside the country
+ for the past 2 weeks? YES
+
+Date: 21/06/2022
+Time In: ewe   Time Out: wew
+Name: eweew
+Address: ewe
+Age: wewe
+Sex: Female
+Contact Number: wew
+1. Do you feel sick? YES
+2. Did you come into contact with
+ anyone that feels unwell? YES
+3. Did you travel outside the country
+ for the past 2 weeks? YES
+
+Date: 21/06/2022
+Time In: qwqw   Time Out: wqqw
+Name: qwqw
+Address: wqwqw
+Age: wqwq
+Sex: Female
+Contact Number: qwqwqw
+1. Do you feel sick? NO
+2. Did you come into contact with
+ anyone that feels unwell? NO
+3. Did you travel outside the country
+ for the past 2 weeks? NO
+
+Date: 21/06/2022
+Time In: ewe   Time Out: wew
+Name: wew
+Address: ewe
+Age: wew
+Sex: Female
+Contact Number: wew
+1. Do you feel sick? NO
+2. Did you come into contact with
+ anyone that feels unwell? NO
+3. Did you travel outside the country
+ for the past 2 weeks? NO
+

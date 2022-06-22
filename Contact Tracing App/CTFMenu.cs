@@ -29,7 +29,7 @@ namespace Contact_Tracing_App
 
         private void BtnCtfStart_Click(object sender, EventArgs e)
         {
-            ContactTracing CTF = new ContactTracing();
+            MessageBoxInstruction CTF = new MessageBoxInstruction();
             CTF.Owner = this;
             CTF.Show();
 

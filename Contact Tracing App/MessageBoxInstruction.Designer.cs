@@ -106,6 +106,7 @@
             this.Name = "MessageBoxInstruction";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Read This!";
+            this.Load += new System.EventHandler(this.MessageBoxInstruction_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PbMbi1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -50,10 +50,9 @@ namespace Contact_Tracing_App
 
         private void BtnMb1Exit_Click(object sender, EventArgs e)
         {
-            CTFMenu Ctf = new CTFMenu();
-            Ctf.Owner = this;
-            Ctf.Show();
-
+            CTFMenu Menu = new CTFMenu();
+            Menu.Show();
+            
             this.Close();
         }
     }

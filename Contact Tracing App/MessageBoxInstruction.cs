@@ -24,11 +24,28 @@ namespace Contact_Tracing_App
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CTFMenu Mb2 = new CTFMenu();
+            ContactTracing Mb2 = new ContactTracing();
             Mb2.Owner = this;
             Mb2.Show();
             
            this.Hide();
+        }
+
+        private void MessageBoxInstruction_Load(object sender, EventArgs e)
+        {
+
+        }
+        
+        //Disable X button
+        private const int CP_NO_CLOSE_BUTTON = 0x200;
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams myCp = base.CreateParams;
+                myCp.ClassStyle = myCp.ClassStyle | CP_NO_CLOSE_BUTTON;
+                return myCp;
+            }
         }
     }
 }
