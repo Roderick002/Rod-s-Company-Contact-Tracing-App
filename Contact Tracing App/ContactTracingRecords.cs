@@ -40,7 +40,7 @@ namespace Contact_Tracing_App
 
             LbCtfRecordList.Items.Clear();
 
-            for (int i = 3; i < length; i += 13)
+            for (int i = 2; i < length; i += 13)
             {
                 String records = LbCtfReferenceList.Items[i].ToString();
                 LbCtfRecordList.Items.Add(records);
@@ -93,7 +93,7 @@ namespace Contact_Tracing_App
             {
                 string name = LbCtfRecordList.SelectedItem.ToString();
                 int index = LbCtfReferenceList.FindStringExact(name);
-                int length = index + 10;
+                int length = index + 11;
                 LbCtfRecordList.Items.Clear();
 
                 for (int i = index; i < length; i++)
@@ -115,16 +115,26 @@ namespace Contact_Tracing_App
 
 
         }
-
+        //Date Filter
         private void BtnCtfFilter_Click(object sender, EventArgs e)
         {
-            string date = DtpCtfDate.Text;
-            int length = 10;
+            string date = "Date: " + DtpCtfDate.Text;
+            int length = LbCtfReferenceList.Items.Count;
+            LbCtfRecordList.Items.Clear();
+            BtnCtfViewDetails.Enabled = true;
 
-            int index = LbCtfReferenceList.FindString("Date: " + date) + 1;
-                MessageBox.Show(index.ToString());
-            
-           
+            for (int i = 1; i < length; i+=13)
+            {
+                string record = LbCtfReferenceList.Items[i].ToString();
+
+                if (date == record)
+                {
+                    string filtered = LbCtfReferenceList.Items[i + 1].ToString();
+                    LbCtfRecordList.Items.Add(filtered);
+                }
+
+            }
+
         }
     }
 }

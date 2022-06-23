@@ -1,7 +1,7 @@
 
 Date: 21/06/2022
-Time In: 2:00 PM   Time Out: 5:00 PM
 Name: Roderick Palmes
+Time In: 2:00 PM   Time Out: 5:00 PM
 Address: Avocado/Bagbaguin/Valenzuela
 Age: 19
 Sex: Male
@@ -13,8 +13,8 @@ Contact Number: 09123456789
  for the past 2 weeks? NO
 
 Date: 21/06/2022
-Time In: qw   Time Out: qw
 Name: qwq
+Time In: 2:00 PM   Time Out: 5:00 PM
 Address: wqwq
 Age: wq
 Sex: Female
@@ -26,8 +26,8 @@ Contact Number: qwq
  for the past 2 weeks? NO
 
 Date: 21/06/2022
-Time In: we   Time Out: we
-Name: John
+Name: qwq
+Time In: 2:00 PM   Time Out: 5:00 PM
 Address: ewe
 Age: ewew
 Sex: Male
@@ -39,8 +39,8 @@ Contact Number: wew
  for the past 2 weeks? YES
 
 Date: 21/06/2022
-Time In: ewew   Time Out: ewe
-Name: we
+Name: qwq
+Time In: 2:00 PM   Time Out: 5:00 PM
 Address: wewe
 Age: wewe
 Sex: Male
@@ -52,8 +52,8 @@ Contact Number: ewew
  for the past 2 weeks? NO
 
 Date: 21/06/2022
-Time In: wew   Time Out: ewe
-Name: wewewe
+Name: qwq
+Time In: 2:00 PM   Time Out: 5:00 PM
 Address: wew
 Age: ewe
 Sex: Female
@@ -65,8 +65,8 @@ Contact Number: ewew
  for the past 2 weeks? YES
 
 Date: 21/06/2022
-Time In: ewe   Time Out: wew
-Name: eweew
+Name: qwq
+Time In: 2:00 PM   Time Out: 5:00 PM
 Address: ewe
 Age: wewe
 Sex: Female
@@ -78,8 +78,8 @@ Contact Number: wew
  for the past 2 weeks? YES
 
 Date: 21/06/2022
-Time In: qwqw   Time Out: wqqw
-Name: qwqw
+Name: qwq
+Time In: 2:00 PM   Time Out: 5:00 PM
 Address: wqwqw
 Age: wqwq
 Sex: Female
@@ -91,8 +91,8 @@ Contact Number: qwqwqw
  for the past 2 weeks? NO
 
 Date: 21/06/2022
-Time In: ewe   Time Out: wew
-Name: wew
+Name: qwq
+Time In: 2:00 PM   Time Out: 5:00 PM
 Address: ewe
 Age: wew
 Sex: Female
@@ -104,12 +104,25 @@ Contact Number: wew
  for the past 2 weeks? NO
 
 Date: 23/06/2022
-Time In: wew   Time Out: wew
-Name: wewwew
+Name: qwq
+Time In: 2:00 PM   Time Out: 5:00 PM
 Address: wew
 Age: ewew
 Sex: Female
 Contact Number: wewe
+1. Do you feel sick? NO
+2. Did you come into contact with
+ anyone that feels unwell? NO
+3. Did you travel outside the country
+ for the past 2 weeks? NO
+
+Date: 23/06/2022
+Name: Erica Dizon
+Time In: 3:00 PM   Time Out: 4:00 PM
+Address: Atis/Caybiga/Caloocan
+Age: 20
+Sex: Female
+Contact Number: 09123458966
 1. Do you feel sick? NO
 2. Did you come into contact with
  anyone that feels unwell? NO

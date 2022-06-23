@@ -189,8 +189,8 @@ namespace Contact_Tracing_App
             {
                 StreamWriter file = File.AppendText(@"C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing Record.txt");
                 file.WriteLine("Date: " + Date);
-                file.WriteLine("Time In: " + TimeIn + "   Time Out: " + TimeOut);
                 file.WriteLine("Name: " + Name);
+                file.WriteLine("Time In: " + TimeIn + "   Time Out: " + TimeOut);
                 file.WriteLine("Address: " + Address);
                 file.WriteLine("Age: " + Age);
                 file.WriteLine("Sex: " + Sex);

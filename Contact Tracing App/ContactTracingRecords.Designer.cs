@@ -40,13 +40,15 @@
             this.BtnCtfViewDetails = new System.Windows.Forms.Button();
             this.DtpCtfDate = new System.Windows.Forms.DateTimePicker();
             this.BtnCtfFilter = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.GbCtfListReference.SuspendLayout();
             this.SuspendLayout();
             // 
             // LbCtfRecordList
             // 
             this.LbCtfRecordList.BackColor = System.Drawing.Color.Snow;
-            this.LbCtfRecordList.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LbCtfRecordList.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LbCtfRecordList.FormattingEnabled = true;
             this.LbCtfRecordList.ItemHeight = 23;
             this.LbCtfRecordList.Location = new System.Drawing.Point(36, 110);
@@ -58,7 +60,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MistyRose;
-            this.panel1.Location = new System.Drawing.Point(27, 102);
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.GbCtfListReference);
+            this.panel1.Location = new System.Drawing.Point(26, 101);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(587, 296);
             this.panel1.TabIndex = 1;
@@ -66,7 +70,7 @@
             // GbCtfListReference
             // 
             this.GbCtfListReference.Controls.Add(this.LbCtfReferenceList);
-            this.GbCtfListReference.Location = new System.Drawing.Point(683, 105);
+            this.GbCtfListReference.Location = new System.Drawing.Point(71, 3);
             this.GbCtfListReference.Name = "GbCtfListReference";
             this.GbCtfListReference.Size = new System.Drawing.Size(444, 285);
             this.GbCtfListReference.TabIndex = 43;
@@ -105,7 +109,7 @@
             // 
             this.BtnCtfViewAll.BackColor = System.Drawing.Color.MistyRose;
             this.BtnCtfViewAll.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnCtfViewAll.Location = new System.Drawing.Point(62, 52);
+            this.BtnCtfViewAll.Location = new System.Drawing.Point(64, 45);
             this.BtnCtfViewAll.Name = "BtnCtfViewAll";
             this.BtnCtfViewAll.Size = new System.Drawing.Size(177, 32);
             this.BtnCtfViewAll.TabIndex = 41;
@@ -142,7 +146,7 @@
             this.DtpCtfDate.CalendarFont = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DtpCtfDate.CustomFormat = "dd/MM/yyyy";
             this.DtpCtfDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DtpCtfDate.Location = new System.Drawing.Point(440, 55);
+            this.DtpCtfDate.Location = new System.Drawing.Point(442, 47);
             this.DtpCtfDate.Name = "DtpCtfDate";
             this.DtpCtfDate.Size = new System.Drawing.Size(130, 27);
             this.DtpCtfDate.TabIndex = 50;
@@ -151,7 +155,7 @@
             // 
             this.BtnCtfFilter.BackColor = System.Drawing.Color.MistyRose;
             this.BtnCtfFilter.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnCtfFilter.Location = new System.Drawing.Point(285, 52);
+            this.BtnCtfFilter.Location = new System.Drawing.Point(287, 45);
             this.BtnCtfFilter.Name = "BtnCtfFilter";
             this.BtnCtfFilter.Size = new System.Drawing.Size(151, 32);
             this.BtnCtfFilter.TabIndex = 51;
@@ -159,16 +163,24 @@
             this.BtnCtfFilter.UseVisualStyleBackColor = false;
             this.BtnCtfFilter.Click += new System.EventHandler(this.BtnCtfFilter_Click);
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Location = new System.Drawing.Point(47, 36);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(551, 51);
+            this.panel4.TabIndex = 3;
+            // 
             // ContactTracingRecords
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.png_20220608_155255_0000;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1189, 514);
+            this.ClientSize = new System.Drawing.Size(640, 514);
             this.Controls.Add(this.BtnCtfFilter);
             this.Controls.Add(this.DtpCtfDate);
-            this.Controls.Add(this.GbCtfListReference);
             this.Controls.Add(this.BtnCtfViewDetails);
             this.Controls.Add(this.BtnCtfBack);
             this.Controls.Add(this.BtnCtfViewAll);
@@ -176,6 +188,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.LbCtfRecordList);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel4);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -185,6 +198,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ContactTracingRecords";
             this.Load += new System.EventHandler(this.ContactTracingRecords_Load);
+            this.panel1.ResumeLayout(false);
             this.GbCtfListReference.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -203,5 +217,6 @@
         public Button BtnCtfViewDetails;
         private DateTimePicker DtpCtfDate;
         public Button BtnCtfFilter;
+        private Panel panel4;
     }
 }
