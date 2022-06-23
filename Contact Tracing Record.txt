@@ -1,9 +1,11 @@
+
+Date: 21/06/2022
+Time In: 2:00 PM   Time Out: 5:00 PM
 Name: Roderick Palmes
 Address: Avocado/Bagbaguin/Valenzuela
 Age: 19
 Sex: Male
 Contact Number: 09123456789
-Time In: 2:00 PM   Time Out: 5:00 PM
 1. Do you feel sick? NO
 2. Did you come into contact with
  anyone that feels unwell? NO
@@ -95,6 +97,19 @@ Address: ewe
 Age: wew
 Sex: Female
 Contact Number: wew
+1. Do you feel sick? NO
+2. Did you come into contact with
+ anyone that feels unwell? NO
+3. Did you travel outside the country 
+ for the past 2 weeks? NO
+
+Date: 23/06/2022
+Time In: wew   Time Out: wew
+Name: wewwew
+Address: wew
+Age: ewew
+Sex: Female
+Contact Number: wewe
 1. Do you feel sick? NO
 2. Did you come into contact with
  anyone that feels unwell? NO

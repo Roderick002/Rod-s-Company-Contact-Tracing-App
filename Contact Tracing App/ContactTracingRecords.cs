@@ -19,23 +19,35 @@ namespace Contact_Tracing_App
 
         private void ContactTracingRecords_Load(object sender, EventArgs e)
         {
+            
 
-        }
-
-        private void BtnCtfViewAll_Click(object sender, EventArgs e)
-        {
             StreamReader file = new StreamReader(@"C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing Record.txt");
 
-            LbCtfRecordList.Items.Clear();
-            string records;
+            string reference;
             do
             {
-                records = file.ReadLine();
+                reference = file.ReadLine();
 
-                LbCtfRecordList.Items.Add(records.ToString());
-                         
+                LbCtfReferenceList.Items.Add(reference.ToString());
+
             } while (!file.EndOfStream);
+        }
 
+        //View All Records
+        private void BtnCtfViewAll_Click(object sender, EventArgs e)
+        {
+            int length = LbCtfReferenceList.Items.Count;
+
+            LbCtfRecordList.Items.Clear();
+
+            for (int i = 3; i < length; i += 13)
+            {
+                String records = LbCtfReferenceList.Items[i].ToString();
+                LbCtfRecordList.Items.Add(records);
+
+            }
+
+            BtnCtfViewDetails.Enabled = true;
 
         }
 
@@ -57,6 +69,62 @@ namespace Contact_Tracing_App
                 myCp.ClassStyle = myCp.ClassStyle | CP_NO_CLOSE_BUTTON;
                 return myCp;
             }
+        }
+
+        private void GbCtfListReference_Enter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void LbCtfRecordList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+  
+        }
+
+        //View Details Of The Selected Record
+        private void BtnCtfViewDetails_Click(object sender, EventArgs e)
+        {
+            if (LbCtfRecordList.SelectedItems.Count != 0)
+            {
+                string name = LbCtfRecordList.SelectedItem.ToString();
+                int index = LbCtfReferenceList.FindStringExact(name);
+                int length = index + 10;
+                LbCtfRecordList.Items.Clear();
+
+                for (int i = index; i < length; i++)
+                {
+
+                    String records = LbCtfReferenceList.Items[i].ToString();
+                    LbCtfRecordList.Items.Add(records);
+
+                }
+
+                BtnCtfViewDetails.Enabled = false;
+            }
+            else
+            {
+                MessageBox.Show("Select a Record!");
+            }
+
+
+
+
+        }
+
+        private void BtnCtfFilter_Click(object sender, EventArgs e)
+        {
+            string date = DtpCtfDate.Text;
+            int length = 10;
+
+            int index = LbCtfReferenceList.FindString("Date: " + date) + 1;
+                MessageBox.Show(index.ToString());
+            
+           
         }
     }
 }
