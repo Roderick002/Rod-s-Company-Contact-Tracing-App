@@ -53,7 +53,7 @@
             this.LbCtfRecordList.ItemHeight = 23;
             this.LbCtfRecordList.Location = new System.Drawing.Point(36, 110);
             this.LbCtfRecordList.Name = "LbCtfRecordList";
-            this.LbCtfRecordList.Size = new System.Drawing.Size(569, 280);
+            this.LbCtfRecordList.Size = new System.Drawing.Size(569, 303);
             this.LbCtfRecordList.TabIndex = 0;
             this.LbCtfRecordList.SelectedIndexChanged += new System.EventHandler(this.LbCtfRecordList_SelectedIndexChanged);
             // 
@@ -62,9 +62,9 @@
             this.panel1.BackColor = System.Drawing.Color.MistyRose;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.GbCtfListReference);
-            this.panel1.Location = new System.Drawing.Point(26, 101);
+            this.panel1.Location = new System.Drawing.Point(26, 100);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(587, 296);
+            this.panel1.Size = new System.Drawing.Size(587, 321);
             this.panel1.TabIndex = 1;
             // 
             // GbCtfListReference
@@ -100,7 +100,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MistyRose;
-            this.panel3.Location = new System.Drawing.Point(-5, 508);
+            this.panel3.Location = new System.Drawing.Point(-5, 525);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(652, 12);
             this.panel3.TabIndex = 3;
@@ -109,7 +109,7 @@
             // 
             this.BtnCtfViewAll.BackColor = System.Drawing.Color.MistyRose;
             this.BtnCtfViewAll.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnCtfViewAll.Location = new System.Drawing.Point(64, 45);
+            this.BtnCtfViewAll.Location = new System.Drawing.Point(64, 46);
             this.BtnCtfViewAll.Name = "BtnCtfViewAll";
             this.BtnCtfViewAll.Size = new System.Drawing.Size(177, 32);
             this.BtnCtfViewAll.TabIndex = 41;
@@ -121,7 +121,7 @@
             // 
             this.BtnCtfBack.BackColor = System.Drawing.Color.MistyRose;
             this.BtnCtfBack.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnCtfBack.Location = new System.Drawing.Point(234, 458);
+            this.BtnCtfBack.Location = new System.Drawing.Point(234, 485);
             this.BtnCtfBack.Name = "BtnCtfBack";
             this.BtnCtfBack.Size = new System.Drawing.Size(177, 32);
             this.BtnCtfBack.TabIndex = 42;
@@ -133,7 +133,7 @@
             // 
             this.BtnCtfViewDetails.BackColor = System.Drawing.Color.MistyRose;
             this.BtnCtfViewDetails.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnCtfViewDetails.Location = new System.Drawing.Point(234, 416);
+            this.BtnCtfViewDetails.Location = new System.Drawing.Point(234, 443);
             this.BtnCtfViewDetails.Name = "BtnCtfViewDetails";
             this.BtnCtfViewDetails.Size = new System.Drawing.Size(177, 32);
             this.BtnCtfViewDetails.TabIndex = 44;
@@ -146,7 +146,7 @@
             this.DtpCtfDate.CalendarFont = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DtpCtfDate.CustomFormat = "dd/MM/yyyy";
             this.DtpCtfDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DtpCtfDate.Location = new System.Drawing.Point(442, 47);
+            this.DtpCtfDate.Location = new System.Drawing.Point(447, 48);
             this.DtpCtfDate.Name = "DtpCtfDate";
             this.DtpCtfDate.Size = new System.Drawing.Size(130, 27);
             this.DtpCtfDate.TabIndex = 50;
@@ -155,7 +155,7 @@
             // 
             this.BtnCtfFilter.BackColor = System.Drawing.Color.MistyRose;
             this.BtnCtfFilter.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnCtfFilter.Location = new System.Drawing.Point(287, 45);
+            this.BtnCtfFilter.Location = new System.Drawing.Point(287, 46);
             this.BtnCtfFilter.Name = "BtnCtfFilter";
             this.BtnCtfFilter.Size = new System.Drawing.Size(151, 32);
             this.BtnCtfFilter.TabIndex = 51;
@@ -167,7 +167,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.Location = new System.Drawing.Point(47, 36);
+            this.panel4.Location = new System.Drawing.Point(46, 36);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(551, 51);
             this.panel4.TabIndex = 3;
@@ -178,7 +178,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.png_20220608_155255_0000;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(640, 514);
+            this.ClientSize = new System.Drawing.Size(640, 531);
             this.Controls.Add(this.BtnCtfFilter);
             this.Controls.Add(this.DtpCtfDate);
             this.Controls.Add(this.BtnCtfViewDetails);

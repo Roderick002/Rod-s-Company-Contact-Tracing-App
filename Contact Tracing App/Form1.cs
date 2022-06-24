@@ -190,6 +190,7 @@ namespace Contact_Tracing_App
                 StreamWriter file = File.AppendText(@"C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing Record.txt");
                 file.WriteLine("Date: " + Date);
                 file.WriteLine("Name: " + Name);
+                file.WriteLine("Date: " + Date);
                 file.WriteLine("Time In: " + TimeIn + "   Time Out: " + TimeOut);
                 file.WriteLine("Address: " + Address);
                 file.WriteLine("Age: " + Age);
@@ -202,7 +203,6 @@ namespace Contact_Tracing_App
                 file.Close();
             
             //Message Box for Another Response or Exit The Program
-                BtnCtfSubmit.Enabled = false;
                 MessageBoxSubmit Mb1 = new MessageBoxSubmit();
                 Mb1.Owner = this;
                 Mb1.Show();

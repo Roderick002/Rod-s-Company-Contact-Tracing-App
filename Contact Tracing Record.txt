@@ -1,6 +1,7 @@
 
 Date: 21/06/2022
 Name: Roderick Palmes
+Date: 21/06/2022
 Time In: 2:00 PM   Time Out: 5:00 PM
 Address: Avocado/Bagbaguin/Valenzuela
 Age: 19
@@ -13,111 +14,120 @@ Contact Number: 09123456789
  for the past 2 weeks? NO
 
 Date: 21/06/2022
-Name: qwq
-Time In: 2:00 PM   Time Out: 5:00 PM
-Address: wqwq
-Age: wq
-Sex: Female
-Contact Number: qwq
-1. Do you feel sick? NO
-2. Did you come into contact with
- anyone that feels unwell? NO
-3. Did you travel outside the country
- for the past 2 weeks? NO
-
+Name: Stephen Vilaruel
 Date: 21/06/2022
-Name: qwq
-Time In: 2:00 PM   Time Out: 5:00 PM
-Address: ewe
-Age: ewew
+Time In: 1:00 PM   Time Out: 3:00 PM
+Address: Avocado/Tondo/Manila
+Age: 26
 Sex: Male
-Contact Number: wew
-1. Do you feel sick? YES
+Contact Number: 09456327857
+1. Do you feel sick? NO
+2. Did you come into contact with
+ anyone that feels unwell? NO
+3. Did you travel outside the country
+ for the past 2 weeks? NO
+
+Date: 22/06/2022
+Name: Christine Mendoza
+Date: 22/06/2022
+Time In: 11:00 AM   Time Out: 3:00 PM
+Address: Sukaban/Novaliches/Quezon
+Age: 21
+Sex: Female
+Contact Number: 09546783201
+1. Do you feel sick? NO
 2. Did you come into contact with
  anyone that feels unwell? YES
 3. Did you travel outside the country
- for the past 2 weeks? YES
+ for the past 2 weeks? NO
 
-Date: 21/06/2022
-Name: qwq
-Time In: 2:00 PM   Time Out: 5:00 PM
-Address: wewe
-Age: wewe
+Date: 22/06/2022
+Name: Peter Tolentino
+Date: 22/06/2022
+Time In: 4:00 PM   Time Out: 7:00 PM
+Address: Green Ville/Llano/Caloocan
+Age: 26
 Sex: Male
-Contact Number: ewew
+Contact Number: 09532756943
 1. Do you feel sick? NO
 2. Did you come into contact with
  anyone that feels unwell? NO
 3. Did you travel outside the country
  for the past 2 weeks? NO
 
-Date: 21/06/2022
-Name: qwq
-Time In: 2:00 PM   Time Out: 5:00 PM
-Address: wew
-Age: ewe
-Sex: Female
-Contact Number: ewew
-1. Do you feel sick? YES
+Date: 22/06/2022
+Name: Rolando Robles
+Date: 22/06/2022
+Time In: 12:00 PM   Time Out: 5:00 PM
+Address: Purokwatro/Paso De Blas/Valenzuela
+Age: 47
+Sex: Male
+Contact Number: 09346826196
+1. Do you feel sick? NO
 2. Did you come into contact with
  anyone that feels unwell? YES
 3. Did you travel outside the country
  for the past 2 weeks? YES
 
-Date: 21/06/2022
-Name: qwq
-Time In: 2:00 PM   Time Out: 5:00 PM
-Address: ewe
-Age: wewe
+Date: 23/06/2022
+Name: Marites Adornado
+Date: 23/06/2022
+Time In: 2:00 PM   Time Out: 7:00 PM
+Address: Torres Ville/Fairview/Quezon
+Age: 24
 Sex: Female
-Contact Number: wew
-1. Do you feel sick? YES
+Contact Number: 09521875921
+1. Do you feel sick? NO
 2. Did you come into contact with
- anyone that feels unwell? YES
+ anyone that feels unwell? NO
 3. Did you travel outside the country
  for the past 2 weeks? YES
 
-Date: 21/06/2022
-Name: qwq
-Time In: 2:00 PM   Time Out: 5:00 PM
-Address: wqwqw
-Age: wqwq
+Date: 23/06/2022
+Name: Evelyn Fabilane
+Date: 23/06/2022
+Time In: 7:00 AM   Time Out: 11:00 AM
+Address: Tuktukan/Malanday/Valenzuela 
+Age: 39
 Sex: Female
-Contact Number: qwqwqw
+Contact Number: 09238475192
 1. Do you feel sick? NO
 2. Did you come into contact with
  anyone that feels unwell? NO
 3. Did you travel outside the country
  for the past 2 weeks? NO
 
-Date: 21/06/2022
-Name: qwq
-Time In: 2:00 PM   Time Out: 5:00 PM
-Address: ewe
-Age: wew
+Date: 23/06/2022
+Name: Rizza Pacaol
+Date: 23/06/2022
+Time In: 2:00 PM   Time Out: 4:00 PM
+Address: Sitio Masinag/Ugong/Valenzuela
+Age: 27
 Sex: Female
-Contact Number: wew
+Contact Number: 09583628561
 1. Do you feel sick? NO
 2. Did you come into contact with
  anyone that feels unwell? NO
 3. Did you travel outside the country 
  for the past 2 weeks? NO
 
-Date: 23/06/2022
-Name: qwq
+Date: 24/06/2022
+Name: Mercy Bernas
+Date: 24/06/2022
 Time In: 2:00 PM   Time Out: 5:00 PM
-Address: wew
-Age: ewew
+Address: Lingahan/Concepcion/Malabon
+Age: 53
 Sex: Female
-Contact Number: wewe
+Contact Number: 09567217592
 1. Do you feel sick? NO
 2. Did you come into contact with
  anyone that feels unwell? NO
 3. Did you travel outside the country
  for the past 2 weeks? NO
 
-Date: 23/06/2022
+Date: 24/06/2022
 Name: Erica Dizon
+Date: 24/06/2022
 Time In: 3:00 PM   Time Out: 4:00 PM
 Address: Atis/Caybiga/Caloocan
 Age: 20
@@ -128,4 +138,18 @@ Contact Number: 09123458966
  anyone that feels unwell? NO
 3. Did you travel outside the country
  for the past 2 weeks? NO
+
+Date: 24/06/2022
+Name: Aillen Gomez
+Date: 24/06/2022
+Time In: 6:00 AM   Time Out: 11:00 AM
+Address: De Castro/Malanday/Valenzuela
+Age: 24
+Sex: Female
+Contact Number: 09826451759
+1. Do you feel sick? NO
+2. Did you come into contact with
+ anyone that feels unwell? NO
+3. Did you travel outside the country
+ for the past 2 weeks? YES
 

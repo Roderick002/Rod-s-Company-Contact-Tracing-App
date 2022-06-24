@@ -20,15 +20,11 @@ namespace Contact_Tracing_App
         private void button1_Click(object sender, EventArgs e)
         {
 
-            ((ContactTracing)Owner).BtnCtfSubmit.Enabled = true;
-
             ContactTracing Ctf = new ContactTracing();
-            Ctf.Owner = this;
             Ctf.Show();
             
-            this.Close();
-            
-           
+            this.Hide();
+                      
         }
 
         private void LblMb11_Click(object sender, EventArgs e)

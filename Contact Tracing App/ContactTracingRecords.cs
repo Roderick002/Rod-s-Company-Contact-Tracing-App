@@ -31,6 +31,9 @@ namespace Contact_Tracing_App
                 LbCtfReferenceList.Items.Add(reference.ToString());
 
             } while (!file.EndOfStream);
+
+            BtnCtfFilter.Enabled = false;
+            BtnCtfViewDetails.Enabled = false;
         }
 
         //View All Records
@@ -40,7 +43,7 @@ namespace Contact_Tracing_App
 
             LbCtfRecordList.Items.Clear();
 
-            for (int i = 2; i < length; i += 13)
+            for (int i = 2; i < length; i += 14)
             {
                 String records = LbCtfReferenceList.Items[i].ToString();
                 LbCtfRecordList.Items.Add(records);
@@ -48,7 +51,7 @@ namespace Contact_Tracing_App
             }
 
             BtnCtfViewDetails.Enabled = true;
-
+            BtnCtfFilter.Enabled = true ;
         }
 
         private void BtnCtfBack_Click(object sender, EventArgs e)
@@ -93,13 +96,14 @@ namespace Contact_Tracing_App
             {
                 string name = LbCtfRecordList.SelectedItem.ToString();
                 int index = LbCtfReferenceList.FindStringExact(name);
-                int length = index + 11;
+                int length = index + 12;
                 LbCtfRecordList.Items.Clear();
 
                 for (int i = index; i < length; i++)
                 {
 
                     String records = LbCtfReferenceList.Items[i].ToString();
+                    
                     LbCtfRecordList.Items.Add(records);
 
                 }
@@ -123,7 +127,7 @@ namespace Contact_Tracing_App
             LbCtfRecordList.Items.Clear();
             BtnCtfViewDetails.Enabled = true;
 
-            for (int i = 1; i < length; i+=13)
+            for (int i = 1; i < length; i+=14)
             {
                 string record = LbCtfReferenceList.Items[i].ToString();
 
