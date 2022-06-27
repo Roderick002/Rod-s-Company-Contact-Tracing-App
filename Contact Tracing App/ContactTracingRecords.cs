@@ -74,49 +74,56 @@ namespace Contact_Tracing_App
             }
         }
 
-        private void GbCtfListReference_Enter(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void LbCtfRecordList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-  
-        }
 
         //View Details Of The Selected Record
         private void BtnCtfViewDetails_Click(object sender, EventArgs e)
         {
-            if (LbCtfRecordList.SelectedItems.Count != 0)
+            if (BtnCtfFilter.Enabled == true)
             {
+                if (LbCtfRecordList.SelectedItems.Count != 0)
+                {
 
+                    int index = LbCtfRecordList.SelectedIndex;
+                    int details = index * 13;
+                    int length = details + 14;
+                    LbCtfRecordList.Items.Clear();
+
+                    for (int i = details + (index + 2); i < length + index; i++)
+                    {
+
+                        String records = LbCtfReferenceList.Items[i].ToString();
+
+                        LbCtfRecordList.Items.Add(records);
+
+                    }
+
+                    BtnCtfViewDetails.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Select a Record!");
+                }
+            }
+           else if (BtnCtfFilter.Enabled == false)
+            {
+                string Date = DtpCtfDate.Value.ToString("dd/MM/yyyy");
+                int firstindex = LbCtfReferenceList.FindStringExact("Date: " + Date);
                 int index = LbCtfRecordList.SelectedIndex;
-                int details = index * 13;
-                int length = details + 14;
+                int details = firstindex + (13 * index);
+                int length = firstindex + (13 * index) + 13;
                 LbCtfRecordList.Items.Clear();
 
-                for (int i = details + (index + 2); i < length + index; i++)
+                for (int i = details + (index + 1); i < length + index; i++)
                 {
 
                     String records = LbCtfReferenceList.Items[i].ToString();
-                    
+
                     LbCtfRecordList.Items.Add(records);
 
                 }
-
+                BtnCtfFilter.Enabled = true;
                 BtnCtfViewDetails.Enabled = false;
             }
-            else
-            {
-                MessageBox.Show("Select a Record!");
-            }
-
-
 
 
         }
@@ -139,6 +146,21 @@ namespace Contact_Tracing_App
                 }
 
             }
+            BtnCtfFilter.Enabled = false;
+
+        }
+        private void GbCtfListReference_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LbCtfRecordList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

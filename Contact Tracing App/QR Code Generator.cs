@@ -49,6 +49,7 @@ namespace Contact_Tracing_App
             }
 
             BtnQcsStart.Text = "Scan Again";
+            BtnQcsStart.Enabled = false;
         }
 
         private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
@@ -150,7 +151,8 @@ namespace Contact_Tracing_App
             file.WriteLine("");
             file.Close();
 
-            BtnQcsSubmit.Enabled = false;
+            BtnQcsStart.Enabled = true;
+            BtnQcsSubmit.Enabled = false;         
         }
 
         //Disable X button
