@@ -94,12 +94,13 @@ namespace Contact_Tracing_App
         {
             if (LbCtfRecordList.SelectedItems.Count != 0)
             {
-                string name = LbCtfRecordList.SelectedItem.ToString();
-                int index = LbCtfReferenceList.FindStringExact(name);
-                int length = index + 12;
+
+                int index = LbCtfRecordList.SelectedIndex;
+                int details = index * 13;
+                int length = details + 14;
                 LbCtfRecordList.Items.Clear();
 
-                for (int i = index; i < length; i++)
+                for (int i = details + (index + 2); i < length + index; i++)
                 {
 
                     String records = LbCtfReferenceList.Items[i].ToString();

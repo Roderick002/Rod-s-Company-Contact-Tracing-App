@@ -81,7 +81,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MistyRose;
-            this.panel1.Location = new System.Drawing.Point(-1, 565);
+            this.panel1.Location = new System.Drawing.Point(-1, 563);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(509, 15);
             this.panel1.TabIndex = 31;
@@ -188,6 +188,7 @@
             this.MinimizeBox = false;
             this.Name = "CTFMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CTFMenu_FormClosing);
             this.Load += new System.EventHandler(this.CTFMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

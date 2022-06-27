@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TextBox TbQcsData;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QR_Code_Scanner));
             this.LblQrsCamera = new System.Windows.Forms.Label();
             this.CbQcsCamera = new System.Windows.Forms.ComboBox();
@@ -39,28 +38,24 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.LbQcsReferenceList = new System.Windows.Forms.ListBox();
             this.BtnQcsBack = new System.Windows.Forms.Button();
-            TbQcsData = new System.Windows.Forms.TextBox();
+            this.DtpQcsDate = new System.Windows.Forms.DateTimePicker();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.BtnQcsSubmit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PbQcsScanner)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // TbQcsData
-            // 
-            TbQcsData.Location = new System.Drawing.Point(512, 86);
-            TbQcsData.Multiline = true;
-            TbQcsData.Name = "TbQcsData";
-            TbQcsData.Size = new System.Drawing.Size(261, 221);
-            TbQcsData.TabIndex = 4;
-            TbQcsData.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // LblQrsCamera
             // 
             this.LblQrsCamera.AutoSize = true;
-            this.LblQrsCamera.BackColor = System.Drawing.Color.Transparent;
-            this.LblQrsCamera.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblQrsCamera.Location = new System.Drawing.Point(96, 403);
+            this.LblQrsCamera.BackColor = System.Drawing.Color.MistyRose;
+            this.LblQrsCamera.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LblQrsCamera.Location = new System.Drawing.Point(98, 405);
             this.LblQrsCamera.Name = "LblQrsCamera";
-            this.LblQrsCamera.Size = new System.Drawing.Size(85, 21);
+            this.LblQrsCamera.Size = new System.Drawing.Size(75, 19);
             this.LblQrsCamera.TabIndex = 0;
             this.LblQrsCamera.Text = "Camera:";
             this.LblQrsCamera.Click += new System.EventHandler(this.LblQrsCamera_Click);
@@ -78,10 +73,10 @@
             // BtnQcsStart
             // 
             this.BtnQcsStart.BackColor = System.Drawing.Color.MistyRose;
-            this.BtnQcsStart.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnQcsStart.Location = new System.Drawing.Point(592, 327);
+            this.BtnQcsStart.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnQcsStart.Location = new System.Drawing.Point(592, 323);
             this.BtnQcsStart.Name = "BtnQcsStart";
-            this.BtnQcsStart.Size = new System.Drawing.Size(104, 37);
+            this.BtnQcsStart.Size = new System.Drawing.Size(104, 33);
             this.BtnQcsStart.TabIndex = 2;
             this.BtnQcsStart.Text = "Start";
             this.BtnQcsStart.UseVisualStyleBackColor = false;
@@ -122,22 +117,69 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MistyRose;
+            this.panel3.Controls.Add(this.LbQcsReferenceList);
             this.panel3.Location = new System.Drawing.Point(503, 77);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(278, 239);
             this.panel3.TabIndex = 6;
             // 
+            // LbQcsReferenceList
+            // 
+            this.LbQcsReferenceList.FormattingEnabled = true;
+            this.LbQcsReferenceList.ItemHeight = 20;
+            this.LbQcsReferenceList.Location = new System.Drawing.Point(7, 7);
+            this.LbQcsReferenceList.Name = "LbQcsReferenceList";
+            this.LbQcsReferenceList.SelectionMode = System.Windows.Forms.SelectionMode.None;
+            this.LbQcsReferenceList.Size = new System.Drawing.Size(264, 224);
+            this.LbQcsReferenceList.TabIndex = 8;
+            // 
             // BtnQcsBack
             // 
             this.BtnQcsBack.BackColor = System.Drawing.Color.MistyRose;
-            this.BtnQcsBack.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnQcsBack.Location = new System.Drawing.Point(570, 392);
+            this.BtnQcsBack.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnQcsBack.Location = new System.Drawing.Point(570, 400);
             this.BtnQcsBack.Name = "BtnQcsBack";
-            this.BtnQcsBack.Size = new System.Drawing.Size(149, 36);
+            this.BtnQcsBack.Size = new System.Drawing.Size(149, 34);
             this.BtnQcsBack.TabIndex = 7;
             this.BtnQcsBack.Text = "Back to Menu";
             this.BtnQcsBack.UseVisualStyleBackColor = false;
             this.BtnQcsBack.Click += new System.EventHandler(this.BtnQcsBack_Click);
+            // 
+            // DtpQcsDate
+            // 
+            this.DtpQcsDate.CalendarFont = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DtpQcsDate.Location = new System.Drawing.Point(517, 35);
+            this.DtpQcsDate.Name = "DtpQcsDate";
+            this.DtpQcsDate.Size = new System.Drawing.Size(250, 27);
+            this.DtpQcsDate.TabIndex = 8;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.MistyRose;
+            this.panel4.Location = new System.Drawing.Point(510, 28);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(264, 40);
+            this.panel4.TabIndex = 9;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.MistyRose;
+            this.panel5.Location = new System.Drawing.Point(91, 394);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(323, 40);
+            this.panel5.TabIndex = 10;
+            // 
+            // BtnQcsSubmit
+            // 
+            this.BtnQcsSubmit.BackColor = System.Drawing.Color.MistyRose;
+            this.BtnQcsSubmit.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnQcsSubmit.Location = new System.Drawing.Point(566, 361);
+            this.BtnQcsSubmit.Name = "BtnQcsSubmit";
+            this.BtnQcsSubmit.Size = new System.Drawing.Size(160, 33);
+            this.BtnQcsSubmit.TabIndex = 11;
+            this.BtnQcsSubmit.Text = "Submit Record";
+            this.BtnQcsSubmit.UseVisualStyleBackColor = false;
+            this.BtnQcsSubmit.Click += new System.EventHandler(this.BtnQcsSubmit_Click);
             // 
             // QR_Code_Scanner
             // 
@@ -145,26 +187,31 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.png_20220608_155255_0000;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(797, 450);
+            this.Controls.Add(this.BtnQcsSubmit);
+            this.Controls.Add(this.DtpQcsDate);
             this.Controls.Add(this.BtnQcsBack);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(TbQcsData);
             this.Controls.Add(this.PbQcsScanner);
             this.Controls.Add(this.BtnQcsStart);
             this.Controls.Add(this.CbQcsCamera);
             this.Controls.Add(this.LblQrsCamera);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel5);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "QR_Code_Scanner";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QR_Code_Scanner";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.QR_Code_Scanner_FormClosing);
             this.Load += new System.EventHandler(this.QR_Code_Scanner_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PbQcsScanner)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,11 +223,15 @@
         private ComboBox CbQcsCamera;
         private Button BtnQcsStart;
         private PictureBox PbQcsScanner;
-        private TextBox TbQcsData;
         private System.Windows.Forms.Timer TimerQcs;
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
         private Button BtnQcsBack;
+        private ListBox LbQcsReferenceList;
+        private DateTimePicker DtpQcsDate;
+        private Panel panel4;
+        private Panel panel5;
+        private Button BtnQcsSubmit;
     }
 }

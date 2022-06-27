@@ -62,5 +62,11 @@ namespace Contact_Tracing_App
 
             this.Hide();
         }
+
+        private void CTFMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+            
+        }
     }
 }
