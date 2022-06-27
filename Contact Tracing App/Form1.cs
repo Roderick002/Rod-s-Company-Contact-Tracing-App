@@ -1,4 +1,5 @@
 using System.IO;
+
 namespace Contact_Tracing_App
 {
     public partial class ContactTracing : Form

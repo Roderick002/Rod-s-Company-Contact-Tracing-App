@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Button BtnCtfScanQRcode;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CTFMenu));
             this.LblCtfTitle = new System.Windows.Forms.Label();
             this.LblCtfSubTitle = new System.Windows.Forms.Label();
@@ -38,8 +39,22 @@
             this.BtnCtfStart = new System.Windows.Forms.Button();
             this.BtnCtfViewRecords = new System.Windows.Forms.Button();
             this.BtnCtfExit = new System.Windows.Forms.Button();
+            this.LblCtfStart = new System.Windows.Forms.Label();
+            BtnCtfScanQRcode = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // BtnCtfScanQRcode
+            // 
+            BtnCtfScanQRcode.BackColor = System.Drawing.Color.MistyRose;
+            BtnCtfScanQRcode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            BtnCtfScanQRcode.Location = new System.Drawing.Point(239, 379);
+            BtnCtfScanQRcode.Name = "BtnCtfScanQRcode";
+            BtnCtfScanQRcode.Size = new System.Drawing.Size(200, 42);
+            BtnCtfScanQRcode.TabIndex = 37;
+            BtnCtfScanQRcode.Text = "Scan QR Code";
+            BtnCtfScanQRcode.UseVisualStyleBackColor = false;
+            BtnCtfScanQRcode.Click += new System.EventHandler(this.BtnCtfScanQRcode_Click);
             // 
             // LblCtfTitle
             // 
@@ -57,7 +72,7 @@
             this.LblCtfSubTitle.AutoSize = true;
             this.LblCtfSubTitle.BackColor = System.Drawing.Color.Transparent;
             this.LblCtfSubTitle.Font = new System.Drawing.Font("Arial", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.LblCtfSubTitle.Location = new System.Drawing.Point(81, 86);
+            this.LblCtfSubTitle.Location = new System.Drawing.Point(81, 84);
             this.LblCtfSubTitle.Name = "LblCtfSubTitle";
             this.LblCtfSubTitle.Size = new System.Drawing.Size(288, 32);
             this.LblCtfSubTitle.TabIndex = 30;
@@ -66,7 +81,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MistyRose;
-            this.panel1.Location = new System.Drawing.Point(-1, 535);
+            this.panel1.Location = new System.Drawing.Point(-1, 565);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(509, 15);
             this.panel1.TabIndex = 31;
@@ -102,11 +117,11 @@
             // 
             this.BtnCtfStart.BackColor = System.Drawing.Color.MistyRose;
             this.BtnCtfStart.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnCtfStart.Location = new System.Drawing.Point(88, 333);
+            this.BtnCtfStart.Location = new System.Drawing.Point(19, 379);
             this.BtnCtfStart.Name = "BtnCtfStart";
-            this.BtnCtfStart.Size = new System.Drawing.Size(279, 51);
+            this.BtnCtfStart.Size = new System.Drawing.Size(207, 42);
             this.BtnCtfStart.TabIndex = 34;
-            this.BtnCtfStart.Text = "Start Contact Tracing!";
+            this.BtnCtfStart.Text = "Fill Up Form";
             this.BtnCtfStart.UseVisualStyleBackColor = false;
             this.BtnCtfStart.Click += new System.EventHandler(this.BtnCtfStart_Click);
             // 
@@ -114,9 +129,9 @@
             // 
             this.BtnCtfViewRecords.BackColor = System.Drawing.Color.MistyRose;
             this.BtnCtfViewRecords.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnCtfViewRecords.Location = new System.Drawing.Point(135, 400);
+            this.BtnCtfViewRecords.Location = new System.Drawing.Point(132, 441);
             this.BtnCtfViewRecords.Name = "BtnCtfViewRecords";
-            this.BtnCtfViewRecords.Size = new System.Drawing.Size(178, 51);
+            this.BtnCtfViewRecords.Size = new System.Drawing.Size(178, 43);
             this.BtnCtfViewRecords.TabIndex = 35;
             this.BtnCtfViewRecords.Text = "View Records";
             this.BtnCtfViewRecords.UseVisualStyleBackColor = false;
@@ -126,13 +141,25 @@
             // 
             this.BtnCtfExit.BackColor = System.Drawing.Color.MistyRose;
             this.BtnCtfExit.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnCtfExit.Location = new System.Drawing.Point(164, 470);
+            this.BtnCtfExit.Location = new System.Drawing.Point(160, 501);
             this.BtnCtfExit.Name = "BtnCtfExit";
             this.BtnCtfExit.Size = new System.Drawing.Size(123, 38);
             this.BtnCtfExit.TabIndex = 36;
             this.BtnCtfExit.Text = "Exit";
             this.BtnCtfExit.UseVisualStyleBackColor = false;
             this.BtnCtfExit.Click += new System.EventHandler(this.BtnCtfExit_Click);
+            // 
+            // LblCtfStart
+            // 
+            this.LblCtfStart.AutoSize = true;
+            this.LblCtfStart.BackColor = System.Drawing.Color.Transparent;
+            this.LblCtfStart.Font = new System.Drawing.Font("Harlow Solid Italic", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.LblCtfStart.ForeColor = System.Drawing.Color.Black;
+            this.LblCtfStart.Location = new System.Drawing.Point(35, 325);
+            this.LblCtfStart.Name = "LblCtfStart";
+            this.LblCtfStart.Size = new System.Drawing.Size(386, 51);
+            this.LblCtfStart.TabIndex = 39;
+            this.LblCtfStart.Text = "Start Contact Tracing!";
             // 
             // CTFMenu
             // 
@@ -142,7 +169,9 @@
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.png_20220608_155255_0000;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(458, 543);
+            this.ClientSize = new System.Drawing.Size(458, 572);
+            this.Controls.Add(this.LblCtfStart);
+            this.Controls.Add(BtnCtfScanQRcode);
             this.Controls.Add(this.BtnCtfExit);
             this.Controls.Add(this.BtnCtfViewRecords);
             this.Controls.Add(this.BtnCtfStart);
@@ -177,5 +206,6 @@
         private Button BtnCtfStart;
         private Button BtnCtfViewRecords;
         private Button BtnCtfExit;
+        private Label LblCtfStart;
     }
 }

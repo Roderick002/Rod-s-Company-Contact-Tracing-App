@@ -153,3 +153,17 @@ Contact Number: 09826451759
 3. Did you travel outside the country
  for the past 2 weeks? YES
 
+Date: 24/06/2022
+Name: Yhanie Pacio
+Date: 24/06/2022
+Time In: 1:00 PM   Time Out: 6:00 PM
+Address: Bayabas/Bagbaguin/Valenzuela
+Age: 28
+Sex: Female
+Contact Number: 09857462384
+1. Do you feel sick? NO
+2. Did you come into contact with
+ anyone that feels unwell? NO
+3. Did you travel outside the country
+ for the past 2 weeks? NO
+

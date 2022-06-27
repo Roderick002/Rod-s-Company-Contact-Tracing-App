@@ -53,5 +53,14 @@ namespace Contact_Tracing_App
 
             this.Hide();
         }
+
+        private void BtnCtfScanQRcode_Click(object sender, EventArgs e)
+        {
+            QR_Code_Scanner QCS = new QR_Code_Scanner();
+            QCS.Owner = this;
+            QCS.Show();
+
+            this.Hide();
+        }
     }
 }
