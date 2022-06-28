@@ -88,7 +88,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MistyRose;
-            this.panel1.Location = new System.Drawing.Point(-2, 0);
+            this.panel1.Location = new System.Drawing.Point(-2, -2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(464, 10);
             this.panel1.TabIndex = 4;
@@ -96,7 +96,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.MistyRose;
-            this.panel2.Location = new System.Drawing.Point(-1, 201);
+            this.panel2.Location = new System.Drawing.Point(-1, 202);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(464, 10);
             this.panel2.TabIndex = 5;

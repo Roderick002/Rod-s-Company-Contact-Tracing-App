@@ -80,7 +80,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MistyRose;
-            this.panel1.Location = new System.Drawing.Point(-1, -3);
+            this.panel1.Location = new System.Drawing.Point(-1, -4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(689, 12);
             this.panel1.TabIndex = 0;
@@ -89,7 +89,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.MistyRose;
-            this.panel2.Location = new System.Drawing.Point(-5, 468);
+            this.panel2.Location = new System.Drawing.Point(-5, 466);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(689, 12);
             this.panel2.TabIndex = 1;
@@ -543,7 +543,7 @@
             this.MinimizeBox = false;
             this.Name = "QR_Generatorcs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "QR_Generatorcs";
+            this.Text = "QR Code Generator";
             this.Load += new System.EventHandler(this.QR_Generatorcs_Load);
             this.QrgPanelSaveQr.ResumeLayout(false);
             this.panel5.ResumeLayout(false);

@@ -40,6 +40,7 @@
             this.BtnCtfViewRecords = new System.Windows.Forms.Button();
             this.BtnCtfExit = new System.Windows.Forms.Button();
             this.LblCtfStart = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             BtnCtfScanQRcode = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +73,7 @@
             this.LblCtfSubTitle.AutoSize = true;
             this.LblCtfSubTitle.BackColor = System.Drawing.Color.Transparent;
             this.LblCtfSubTitle.Font = new System.Drawing.Font("Arial", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.LblCtfSubTitle.Location = new System.Drawing.Point(81, 84);
+            this.LblCtfSubTitle.Location = new System.Drawing.Point(81, 81);
             this.LblCtfSubTitle.Name = "LblCtfSubTitle";
             this.LblCtfSubTitle.Size = new System.Drawing.Size(288, 32);
             this.LblCtfSubTitle.TabIndex = 30;
@@ -81,7 +82,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MistyRose;
-            this.panel1.Location = new System.Drawing.Point(-1, 563);
+            this.panel1.Location = new System.Drawing.Point(-1, 561);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(509, 15);
             this.panel1.TabIndex = 31;
@@ -99,7 +100,7 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(149, 139);
+            this.pictureBox1.Location = new System.Drawing.Point(149, 133);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(161, 152);
             this.pictureBox1.TabIndex = 33;
@@ -109,7 +110,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MistyRose;
-            this.panel3.Location = new System.Drawing.Point(135, 128);
+            this.panel3.Location = new System.Drawing.Point(135, 122);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(187, 175);
             this.panel3.TabIndex = 32;
@@ -162,6 +163,18 @@
             this.LblCtfStart.TabIndex = 39;
             this.LblCtfStart.Text = "Start Contact Tracing!";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Location = new System.Drawing.Point(83, 300);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(301, 23);
+            this.label1.TabIndex = 40;
+            this.label1.Text = "Click logo to generate your QR code!";
+            // 
             // CTFMenu
             // 
             this.AllowDrop = true;
@@ -171,6 +184,7 @@
             this.BackgroundImage = global::Contact_Tracing_App.Properties.Resources.png_20220608_155255_0000;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(458, 572);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.LblCtfStart);
             this.Controls.Add(BtnCtfScanQRcode);
             this.Controls.Add(this.BtnCtfExit);
@@ -189,6 +203,7 @@
             this.MinimizeBox = false;
             this.Name = "CTFMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Rod\'s Company Contact Tracing Application";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CTFMenu_FormClosing);
             this.Load += new System.EventHandler(this.CTFMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -209,5 +224,6 @@
         private Button BtnCtfViewRecords;
         private Button BtnCtfExit;
         private Label LblCtfStart;
+        private Label label1;
     }
 }
