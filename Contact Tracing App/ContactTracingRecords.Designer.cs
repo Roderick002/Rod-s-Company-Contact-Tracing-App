@@ -150,6 +150,7 @@
             this.DtpCtfDate.Name = "DtpCtfDate";
             this.DtpCtfDate.Size = new System.Drawing.Size(130, 27);
             this.DtpCtfDate.TabIndex = 50;
+            this.DtpCtfDate.ValueChanged += new System.EventHandler(this.DtpCtfDate_ValueChanged);
             // 
             // BtnCtfFilter
             // 

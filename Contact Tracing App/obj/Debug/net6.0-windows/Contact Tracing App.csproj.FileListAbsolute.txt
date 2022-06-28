@@ -26,3 +26,6 @@ C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App
 C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
 C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\bin\Debug\net6.0-windows\zxing.dll
 C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact Tracing App.csproj.CopyComplete
+C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\obj\Debug\net6.0-windows\Contact_Tracing_App.QR_Generatorcs.resources
+C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\bin\Debug\net6.0-windows\QRCoder.dll
+C:\Users\damtr\OneDrive\Desktop\Programs\Contact Tracing App\Contact Tracing App\bin\Debug\net6.0-windows\UnityEngine.dll

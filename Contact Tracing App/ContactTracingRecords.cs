@@ -163,5 +163,10 @@ namespace Contact_Tracing_App
         {
 
         }
+
+        private void DtpCtfDate_ValueChanged(object sender, EventArgs e)
+        {
+            BtnCtfFilter.Enabled = true;
+        }
     }
 }

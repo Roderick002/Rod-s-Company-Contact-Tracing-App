@@ -19,5 +19,8 @@
     <Compile Update="QR Code Generator.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="QR Generatorcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

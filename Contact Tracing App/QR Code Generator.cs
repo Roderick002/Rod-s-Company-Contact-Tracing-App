@@ -45,7 +45,7 @@ namespace Contact_Tracing_App
                 captureDevice.Start();
                 TimerQcs.Start();
 
-                LbQcsReferenceList.Items.Clear();
+                
             }
 
             BtnQcsStart.Text = "Scan Again";
@@ -152,7 +152,10 @@ namespace Contact_Tracing_App
             file.Close();
 
             BtnQcsStart.Enabled = true;
-            BtnQcsSubmit.Enabled = false;         
+            BtnQcsSubmit.Enabled = false;
+            MessageBox.Show("Record Has Been Successfully Submitted!");
+            LbQcsReferenceList.Items.Clear();
+            PbQcsScanner.Image = null;
         }
 
         //Disable X button

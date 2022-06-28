@@ -68,5 +68,13 @@ namespace Contact_Tracing_App
             Application.Exit();
             
         }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            QR_Generatorcs Qrg = new QR_Generatorcs();
+            Qrg.Show();
+
+            this.Hide();
+        }
     }
 }

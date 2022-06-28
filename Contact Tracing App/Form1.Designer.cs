@@ -537,7 +537,7 @@
             // 
             this.BtnCtfSubmit.BackColor = System.Drawing.Color.MistyRose;
             this.BtnCtfSubmit.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnCtfSubmit.Location = new System.Drawing.Point(117, 827);
+            this.BtnCtfSubmit.Location = new System.Drawing.Point(133, 827);
             this.BtnCtfSubmit.Name = "BtnCtfSubmit";
             this.BtnCtfSubmit.Size = new System.Drawing.Size(147, 29);
             this.BtnCtfSubmit.TabIndex = 40;
@@ -656,7 +656,7 @@
             // 
             this.BtnCtfBack.BackColor = System.Drawing.Color.MistyRose;
             this.BtnCtfBack.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnCtfBack.Location = new System.Drawing.Point(103, 865);
+            this.BtnCtfBack.Location = new System.Drawing.Point(123, 865);
             this.BtnCtfBack.Name = "BtnCtfBack";
             this.BtnCtfBack.Size = new System.Drawing.Size(170, 29);
             this.BtnCtfBack.TabIndex = 51;

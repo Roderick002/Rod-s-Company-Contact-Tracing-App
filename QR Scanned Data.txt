@@ -1,0 +1,10 @@
+Name: Roderick  Palmes
+Address: Avocado/Bagbaguin/Valenzuela
+Age: 19
+Sex: Male
+Contact Number: 09123456789
+1. Do you feel sick? NO
+2. Did you come into contact with
+ anyone that feels unwell? NO
+3. Did you travel outside the country
+ for the past 2 weeks? NO
